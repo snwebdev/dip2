@@ -8,9 +8,12 @@
  * @param powers - an array of text names of powers
  * @param text - text to be tested
  * @returns {boolean}
+ *
  */
 
-module.exports = function (powers, text){
+const  powers = ["Austria", "England", "France", "Germany", "Italy", "Russia", "Turkey"];
+
+module.exports = function (text){
     for (var i = 0; i < powers.length; i++) {
         if (powers[i] === text) {
             return true;
