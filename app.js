@@ -13,11 +13,17 @@ const getOrderTextArrayFromOrderText = require('./getOrderTextArrayFromOrderText
 const getUnitTypeFromOrderTextArray = require('./getUnitTypeFromOrderTextArray');
 const getProvinceByName = require('./getProvinceByName');
 const map = require('./map');
-const getUnitLocationProvinceNameFromOrderTextArray = require('./getUnitLocationProvinceNameFromOrderTextArray');
+const getUnitLocationProvinceNameFromOrderTextArray = require('./getUnitLocationNameFromOrderTextArray');
 const getOrderTypeFromOrdersTextArray = require('./getOrderTypeFromOrderTextArray');
 const getMoveToProvinceNameFromOrderTextArray = require('./getMoveToProvinceNameFromOrderTextArray');
 const getSupportedFromProvinceNameFromOrderTextArray = require('./getSupportedFromProvinceNameFromOrderTextArray');
-
+const getSupportedToProvinceNameFromOrderTextArray = require('./getSupportedToProvinceNameFromOrderTextArray');
+const getSupportedOrderTypeFromOrderTextArray = require ('./getSupportedOrderTypeFromOrderTextArray');
+const getSupportedHoldProvinceNameFromOrderTextArray = require ('./getSupportedHoldProvinceNameFromOrderTextArray');
+const getMoveOrderFromOrderTextArray = require ('./getMoveOrderFromOrderTextArray');
+const getHoldOrderFromOrderTextArray = require ('./getHoldOrderFromOrderTextArray');
+const getOrderFromOrderTextArray = require('./getOrderFromOrderTextArray')
+;
 
 
 
@@ -50,6 +56,25 @@ console.log("moveTo="+moveTo);
 
 var supFrom = getSupportedFromProvinceNameFromOrderTextArray(orderTextArray);
 console.log("supFrom="+supFrom);
+
+var supTo = getSupportedToProvinceNameFromOrderTextArray(orderTextArray);
+console.log("supTo="+supTo);
+
+var supportedOrderType = getSupportedOrderTypeFromOrderTextArray(orderTextArray);
+console.log("supportedOrderType="+supportedOrderType);
+
+var supportedHoldProvinceName = getSupportedHoldProvinceNameFromOrderTextArray(orderTextArray);
+console.log("supportedHoldProvinceName="+supportedHoldProvinceName);
+
+var MoveOrder = getMoveOrderFromOrderTextArray("France", orderTextArray);
+console.log("moveOrder="+ JSON.stringify(MoveOrder));
+
+var holdOrder = getHoldOrderFromOrderTextArray("France", orderTextArray);
+console.log("holdOrder="+ JSON.stringify(holdOrder));
+
+var order = getOrderFromOrderTextArray("France", orderTextArray);
+console.log('order='+ JSON.stringify(order));
+
 
 
 
