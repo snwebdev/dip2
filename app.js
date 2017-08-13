@@ -2,83 +2,44 @@
  * Created by stewart on 07/07/17.
  */
 const  powers = ["Austria", "England", "France", "Germany", "Italy", "Russia", "Turkey"];
+var units = []; //array holding position of units
 
 console.log("dip2");
 
-const getOrders = require('./getOrders');
-const removeBlankElementsFromArray = require("./removeBlankElementsFromArray");
-const extractPowerFromOrdersText = require ('./getPowerFromOrdersText');
-const getOrdersTextForPower = require('./getOrdersTextForPower');
-const getOrderTextArrayFromOrderText = require('./getOrderTextArrayFromOrderText');
-const getUnitTypeFromOrderTextArray = require('./getUnitTypeFromOrderTextArray');
-const getProvinceByName = require('./getProvinceByName');
-const map = require('./map');
-const getUnitLocationProvinceNameFromOrderTextArray = require('./getUnitLocationNameFromOrderTextArray');
-const getOrderTypeFromOrdersTextArray = require('./getOrderTypeFromOrderTextArray');
-const getMoveToProvinceNameFromOrderTextArray = require('./getMoveToProvinceNameFromOrderTextArray');
-const getSupportedFromProvinceNameFromOrderTextArray = require('./getSupportedFromProvinceNameFromOrderTextArray');
-const getSupportedToProvinceNameFromOrderTextArray = require('./getSupportedToProvinceNameFromOrderTextArray');
-const getSupportedOrderTypeFromOrderTextArray = require ('./getSupportedOrderTypeFromOrderTextArray');
-const getSupportedHoldProvinceNameFromOrderTextArray = require ('./getSupportedHoldProvinceNameFromOrderTextArray');
-const getMoveOrderFromOrderTextArray = require ('./getMoveOrderFromOrderTextArray');
-const getHoldOrderFromOrderTextArray = require ('./getHoldOrderFromOrderTextArray');
-const getOrderFromOrderTextArray = require('./getOrderFromOrderTextArray');
-const splitOrdersByPowers = require('./splitOrdersByPowers');
+// const getOrders = require('./logic/orders/getOrders');
+const getUnits = require('./logic/map/getUnits');
+
+const placeUnit = require("./logic/map/placeUnit");
+// const powerHasUnitInProvince = require("./orders/powerHasUnitInProvince");
+ const printMap = require ("./logic/map/printMap");
+// const getProvince = require("./orders/getProvince");
+// const getOrdersArrayFromOrdersTextArray = require("./orders/getOrdersArrayFromOrdersTextArray");
+ const getOrdersArrayFromOrdersTextFile = require("./logic/orders/getOrdersArrayFromOrderTextFile");
+ const initialiseMap = require("./logic/setup/initialiseMap");
+const initialiseMapFromOrders = require("./logic/setup/initialiseMapFromOrders");
+const fleetConnects = require('./logic/map/fleetConnects');
+const armyConnects = require('./logic/map/armyConnects');
+const orderPowerOwnsUnitInProvince = require('./logic/orders/legal/orderPowerOwnsUnitInProvince');
+const orderedUnitIsRightType = require('./logic/orders/legal/orderedUnitIsRightType');
+const checkOrder = require('./logic/orders/legal/checkOrder');
+initialiseMap(units);
+console.log("units="+ JSON.stringify(units));
+
+var ordersArray = getOrdersArrayFromOrdersTextFile();
+console.log(ordersArray);
+order = ordersArray[1];
+console.log("before check "+ JSON.stringify(order));
+checkOrder(units, order);
+
+
+
+console.log("after check "+ JSON.stringify(order));
 
 
 
 
 
-var orders = getOrders();
-orders = removeBlankElementsFromArray(orders);
-var p = extractPowerFromOrdersText(powers, orders);
-console.log(p);
-var testOrders = getOrdersTextForPower(p,orders);
-console.log("testOrders="+testOrders);
 
-//
-// var order = testOrders[0];
-// console.log("order="+order);
-// var orderTextArray = getOrderTextArrayFromOrderText(order);
-// console.log("orderTextArray="+orderTextArray);
-//
-// var unitType = getUnitTypeFromOrderTextArray(orderTextArray);
-// console.log('unitType='+unitType);
-//
-// console.log(getProvinceByName("ADS"));
-//
-// var location = getUnitLocationProvinceNameFromOrderTextArray(orderTextArray);
-// console.log("location="+location);
-//
-// var orderType = getOrderTypeFromOrdersTextArray(orderTextArray);
-// console.log ("orderType="+orderType);
-//
-// var moveTo = getMoveToProvinceNameFromOrderTextArray(orderTextArray);
-// console.log("moveTo="+moveTo);
-//
-// var supFrom = getSupportedFromProvinceNameFromOrderTextArray(orderTextArray);
-// console.log("supFrom="+supFrom);
-//
-// var supTo = getSupportedToProvinceNameFromOrderTextArray(orderTextArray);
-// console.log("supTo="+supTo);
-//
-// var supportedOrderType = getSupportedOrderTypeFromOrderTextArray(orderTextArray);
-// console.log("supportedOrderType="+supportedOrderType);
-//
-// var supportedHoldProvinceName = getSupportedHoldProvinceNameFromOrderTextArray(orderTextArray);
-// console.log("supportedHoldProvinceName="+supportedHoldProvinceName);
-//
-// var MoveOrder = getMoveOrderFromOrderTextArray("France", orderTextArray);
-// console.log("moveOrder="+ JSON.stringify(MoveOrder));
-//
-// var holdOrder = getHoldOrderFromOrderTextArray("France", orderTextArray);
-// console.log("holdOrder="+ JSON.stringify(holdOrder));
-//
-// var order = getOrderFromOrderTextArray("France", orderTextArray);
-// console.log('order='+ JSON.stringify(order));
-
-//console.log("orders="+orders);
-console.log("splitOrdersByPowers="+splitOrdersByPowers());
 
 
 

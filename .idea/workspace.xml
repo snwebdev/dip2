@@ -2,10 +2,72 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d0a1b14d-2097-4619-8e4e-d773eea8c6df" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/splitOrdersByPowers.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/typescript-compiler.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/logic/map/armyConnects.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/logic/map/couldMoveFromTo.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/logic/map/fleetConnects.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/logic/map/getProvinceFromProvinceName.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/logic/map/getUnits.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/logic/map/placeUnit.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/logic/map/printMap.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/logic/orders/getOrderTextArrayFromOrderText.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/logic/orders/getOrdersArrayFromOrderTextFile.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/logic/orders/getOrdersArrayFromOrdersTextArray.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/logic/orders/getPowerFromOrderTextArray.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/logic/orders/getProvince.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/logic/orders/getSupportHoldOrderFromOrderTextArray.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/logic/orders/getSupportMoveOrderFromOrderTextArray.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/logic/orders/getSupportOrderFromOrderTextArray.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/logic/orders/getSupportOrderTypeFromOrderTextArray.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/logic/orders/getSupportedMoveUnitTypeFromOrderTextArray.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/logic/orders/getUnitTypeFromLocationName.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/logic/orders/legal/checkMove.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/logic/orders/legal/checkOrder.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/logic/orders/legal/checkPower.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/logic/orders/legal/checkSupportMove.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/logic/orders/legal/checkUnitType.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/logic/orders/legal/orderPowerOwnsUnitInProvince.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/logic/orders/legal/orderedUnitIsRightType.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/logic/orders/legal/supportedMovePossible.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/logic/orders/powerHasUnitInProvince.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/logic/orders/splitOrdersByPowers.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/logic/orders/unitCouldMoveTo.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/logic/setup/initialiseMap.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/logic/setup/initialiseMapFromOrders.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/units.txt" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/getOrderTextArrayFromOrderText.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/splitOrdersByPowers.js" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/get SupportedToProvinceNameFromOrderTextArray.js" afterPath="$PROJECT_DIR$/logic/orders/get SupportedToProvinceNameFromOrderTextArray.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/getArmyConnections.js" afterPath="$PROJECT_DIR$/logic/orders/getArmyConnections.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/getArrayOfLinesFromText.js" afterPath="$PROJECT_DIR$/logic/orders/getArrayOfLinesFromText.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/getEachOrderArray.js" afterPath="$PROJECT_DIR$/logic/orders/getEachOrderArray.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/getFleetConnections.js" afterPath="$PROJECT_DIR$/logic/orders/getFleetConnections.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/getHoldOrderFromOrderTextArray.js" afterPath="$PROJECT_DIR$/logic/orders/getHoldOrderFromOrderTextArray.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/getMoveFromProvinceNameFromOrderTextArray.js" afterPath="$PROJECT_DIR$/logic/orders/getMoveFromProvinceNameFromOrderTextArray.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/getMoveOrderFromOrderTextArray.js" afterPath="$PROJECT_DIR$/logic/orders/getMoveOrderFromOrderTextArray.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/getMoveToProvinceNameFromOrderTextArray.js" afterPath="$PROJECT_DIR$/logic/orders/getMoveToProvinceNameFromOrderTextArray.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/getOrderFromOrderTextArray.js" afterPath="$PROJECT_DIR$/logic/orders/getOrderFromOrderTextArray.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/getOrderTypeFromOrderTextArray.js" afterPath="$PROJECT_DIR$/logic/orders/getOrderTypeFromOrderTextArray.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/getOrders.js" afterPath="$PROJECT_DIR$/logic/orders/getOrders.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/getOrdersTextForPower.js" afterPath="$PROJECT_DIR$/logic/orders/getOrdersTextForPower.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/getPowerFromOrdersText.js" afterPath="$PROJECT_DIR$/logic/orders/getPowerFromOrdersText.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/getProvinceByName.js" afterPath="$PROJECT_DIR$/logic/orders/getProvinceByName.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/getSupportedFromProvinceNameFromOrderTextArray.js" afterPath="$PROJECT_DIR$/logic/orders/getSupportedFromProvinceNameFromOrderTextArray.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/getSupportedHoldProvinceNameFromOrderTextArray.js" afterPath="$PROJECT_DIR$/logic/orders/getSupportedHoldProvinceNameFromOrderTextArray.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/getSupportedOrderTypeFromOrderTextArray.js" afterPath="$PROJECT_DIR$/logic/orders/getSupportedOrderTypeFromOrderTextArray.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/getSupportedToProvinceNameFromOrderTextArray" afterPath="$PROJECT_DIR$/logic/orders/getSupportedToProvinceNameFromOrderTextArray" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/getUnitLocationNameFromOrderTextArray.js" afterPath="$PROJECT_DIR$/logic/orders/getUnitLocationNameFromOrderTextArray.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/getUnitTypeFromOrderTextArray.js" afterPath="$PROJECT_DIR$/logic/orders/getUnitTypeFromOrderTextArray.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/isAPower.js" afterPath="$PROJECT_DIR$/logic/orders/isAPower.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/isAProvinceName.js" afterPath="$PROJECT_DIR$/logic/orders/isAProvinceName.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/map.js" afterPath="$PROJECT_DIR$/logic/map/map.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/order.js" afterPath="$PROJECT_DIR$/logic/orders/order.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/removeBlankElementsFromArray.js" afterPath="$PROJECT_DIR$/logic/orders/removeBlankElementsFromArray.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/removeBlanksFromArray.js" afterPath="$PROJECT_DIR$/logic/orders/removeBlanksFromArray.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/test/map/getFleetConnections.ts" afterPath="$PROJECT_DIR$/logic/test/map/getFleetConnections.ts" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app.js" afterPath="$PROJECT_DIR$/app.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/isAPower.js" afterPath="$PROJECT_DIR$/isAPower.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/area.js" afterPath="$PROJECT_DIR$/area.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/orders.txt" afterPath="$PROJECT_DIR$/orders.txt" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -21,31 +83,51 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="app.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="45">
-              <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="89" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="orders.txt" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/orders.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+            <state relative-caret-position="45">
+              <caret line="3" column="17" lean-forward="false" selection-start-line="3" selection-start-column="17" selection-end-line="3" selection-end-column="17" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="splitOrdersByPowers.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/splitOrdersByPowers.js">
+      <file leaf-file-name="getUnitTypeFromLocationName.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/logic/orders/getUnitTypeFromLocationName.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="338">
-              <caret line="33" column="6" lean-forward="false" selection-start-line="33" selection-start-column="6" selection-end-line="33" selection-end-column="6" />
+            <state relative-caret-position="90">
+              <caret line="6" column="1" lean-forward="true" selection-start-line="6" selection-start-column="1" selection-end-line="6" selection-end-column="1" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="app.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="366">
+              <caret line="33" column="0" lean-forward="true" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="getSupportOrderFromOrderTextArray.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/logic/orders/getSupportOrderFromOrderTextArray.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="45">
+              <caret line="3" column="45" lean-forward="false" selection-start-line="3" selection-start-column="45" selection-end-line="3" selection-end-column="45" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="getSupportMoveOrderFromOrderTextArray.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/logic/orders/getSupportMoveOrderFromOrderTextArray.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="240">
+              <caret line="18" column="93" lean-forward="false" selection-start-line="18" selection-start-column="93" selection-end-line="18" selection-end-column="93" />
               <folding>
                 <element signature="e#0#42#0" expanded="false" />
               </folding>
@@ -53,11 +135,45 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="isAPower.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/isAPower.js">
+      <file leaf-file-name="getSupportedMoveUnitTypeFromOrderTextArray.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/logic/orders/getSupportedMoveUnitTypeFromOrderTextArray.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="17" column="7" lean-forward="false" selection-start-line="17" selection-start-column="7" selection-end-line="17" selection-end-column="7" />
+            <state relative-caret-position="90">
+              <caret line="8" column="49" lean-forward="false" selection-start-line="8" selection-start-column="49" selection-end-line="8" selection-end-column="49" />
+              <folding>
+                <element signature="e#0#42#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="supportedMovePossible.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/logic/orders/legal/supportedMovePossible.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="90">
+              <caret line="6" column="55" lean-forward="false" selection-start-line="6" selection-start-column="55" selection-end-line="6" selection-end-column="55" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="checkOrder.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/logic/orders/legal/checkOrder.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="300">
+              <caret line="22" column="1" lean-forward="true" selection-start-line="22" selection-start-column="1" selection-end-line="22" selection-end-column="1" />
+              <folding>
+                <element signature="e#0#42#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="checkSupportMove.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/logic/orders/legal/checkSupportMove.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="105">
+              <caret line="7" column="65" lean-forward="true" selection-start-line="7" selection-start-column="65" selection-end-line="7" selection-end-column="65" />
               <folding />
             </state>
           </provider>
@@ -76,7 +192,11 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>./getMoveOrderFromOrderTextArray'</find>
+      <find>&quot;Fleet</find>
     </findStrings>
+    <replaceStrings>
+      <replace>&quot;Fleet&quot;</replace>
+    </replaceStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -84,49 +204,57 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/map.js" />
-        <option value="$PROJECT_DIR$/order.js" />
-        <option value="$PROJECT_DIR$/area.js" />
-        <option value="$PROJECT_DIR$/test/map/getFleetConnections.ts" />
-        <option value="$PROJECT_DIR$/getFleetConnections.js" />
-        <option value="$PROJECT_DIR$/getArmyConnections.js" />
-        <option value="$PROJECT_DIR$/removeBlankElementsFromArray.js" />
-        <option value="$PROJECT_DIR$/getArrayFromText.js" />
-        <option value="$PROJECT_DIR$/getOrders.js" />
-        <option value="$PROJECT_DIR$/getArrayOfLinesFromText.js" />
-        <option value="$PROJECT_DIR$/getEachOrderArray.js" />
-        <option value="$PROJECT_DIR$/const.js" />
-        <option value="$PROJECT_DIR$/getPower.ts" />
-        <option value="$PROJECT_DIR$/extractPowerFromOrdersText.js" />
-        <option value="$PROJECT_DIR$/getOrdersTextForPower.js" />
-        <option value="$PROJECT_DIR$/getUnitFromOrderText.js" />
-        <option value="$PROJECT_DIR$/removeBlanksFromArray.js" />
-        <option value="$PROJECT_DIR$/getOrderTextArrayFromOrderText.js" />
-        <option value="$PROJECT_DIR$/getUnitTypeFromOrderText.js" />
-        <option value="$PROJECT_DIR$/getUnitTypeFromOrderTextArray.js" />
-        <option value="$PROJECT_DIR$/getUnitLocationFromOrderTextArray.ts" />
-        <option value="$PROJECT_DIR$/isAProvince.js" />
-        <option value="$PROJECT_DIR$/getProvinceByName.js" />
-        <option value="$PROJECT_DIR$/getUnitLocationFromOrderTextArray.js" />
-        <option value="$PROJECT_DIR$/getOrderTypeFromOrderTextArray.js" />
-        <option value="$PROJECT_DIR$/getMoveToFromOrderTextArray.js" />
+        <option value="$PROJECT_DIR$/getMoveFromProvinceNameFromOrderTextArray.js" />
         <option value="$PROJECT_DIR$/getMoveToProvinceNameFromOrderTextArray.js" />
         <option value="$PROJECT_DIR$/getSupportedFromProvinceNameFromOrderTextArray.js" />
+        <option value="$PROJECT_DIR$/getSupportedHoldProvinceNameFromOrderTextArray.js" />
+        <option value="$PROJECT_DIR$/getSupportedOrderTypeFromOrderTextArray.js" />
         <option value="$PROJECT_DIR$/getSupportedToProvinceNameFromOrderTextArray" />
-        <option value="$PROJECT_DIR$/get SupportedToProvinceNameFromOrderTextArray.js" />
-        <option value="$PROJECT_DIR$/getSupportedOrderType.js" />
-        <option value="$PROJECT_DIR$/getSupportedHoldProvinceName.js" />
-        <option value="$PROJECT_DIR$/getMoveFromProvinceNameFromOrderTextArray.js" />
+        <option value="$PROJECT_DIR$/getUnitLocationNameFromOrderTextArray.js" />
+        <option value="$PROJECT_DIR$/getUnitTypeFromOrderTextArray.js" />
+        <option value="$PROJECT_DIR$/getOrdersArrayFromOrdersTextArray.js" />
+        <option value="$PROJECT_DIR$/getPowerFromOrderTextArray.js" />
+        <option value="$PROJECT_DIR$/getOrdersArrayFromOrderTextFile.js" />
         <option value="$PROJECT_DIR$/getHoldOrderFromOrderTextArray.js" />
-        <option value="$PROJECT_DIR$/getOrderFromOrderText.js" />
         <option value="$PROJECT_DIR$/getOrderFromOrderTextArray.js" />
         <option value="$PROJECT_DIR$/getMoveOrderFromOrderTextArray.js" />
-        <option value="$PROJECT_DIR$/splitOrdersByPower.js" />
+        <option value="$PROJECT_DIR$/orders/getMoveOrderFromOrderTextArray.js" />
+        <option value="$PROJECT_DIR$/orders/getOrders.js" />
+        <option value="$PROJECT_DIR$/logic/setup/initialiseFromOrders.js" />
+        <option value="$PROJECT_DIR$/logic/orders/getMoveOrderFromOrderTextArray.js" />
+        <option value="$PROJECT_DIR$/logic/setup/initialiseMapFromOrders.js" />
+        <option value="$PROJECT_DIR$/logic/orders/getOrdersArrayFromOrdersTextArray.js" />
+        <option value="$PROJECT_DIR$/logic/orders/getOrderFromOrderTextArray.js" />
+        <option value="$PROJECT_DIR$/logic/orders/getSupportOrderType.js" />
+        <option value="$PROJECT_DIR$/logic/orders/getOrdersArrayFromOrderTextFile.js" />
+        <option value="$PROJECT_DIR$/logic/orders/getSupportOrderFromOrderTextArray.js" />
+        <option value="$PROJECT_DIR$/logic/orders/getSupportOrderTypeFromOrderTextArray.js" />
+        <option value="$PROJECT_DIR$/logic/orders/getHoldOrderFromOrderTextArray.js" />
+        <option value="$PROJECT_DIR$/logic/orders/getSupportHoldOrderFromOrderTextArray.js" />
+        <option value="$PROJECT_DIR$/logic/map/getProvinceFromProvinceName.js" />
+        <option value="$PROJECT_DIR$/logic/map/fleetConnects.js" />
+        <option value="$PROJECT_DIR$/logic/map/armyConnnects.js" />
+        <option value="$PROJECT_DIR$/logic/map/armyConnects.js" />
+        <option value="$PROJECT_DIR$/logic/map/units.js" />
+        <option value="$PROJECT_DIR$/logic/map/placeUnit.js" />
+        <option value="$PROJECT_DIR$/logic/orders/legal/unitInProvinceOwnedByPower.js" />
+        <option value="$PROJECT_DIR$/logic/orders/legal/unitIsRightType.js" />
+        <option value="$PROJECT_DIR$/logic/orders/legal/orderPowerOwnsUnitInProvince.js" />
+        <option value="$PROJECT_DIR$/logic/orders/legal/orderedUnitIsRightType.js" />
+        <option value="$PROJECT_DIR$/logic/setup/initialiseMap.js" />
+        <option value="$PROJECT_DIR$/logic/orders/legal/checkPower.js" />
+        <option value="$PROJECT_DIR$/logic/orders/legal/checkUnitType.js" />
+        <option value="$PROJECT_DIR$/logic/orders/legal/couldMoveFromTo.js" />
         <option value="$PROJECT_DIR$/orders.txt" />
+        <option value="$PROJECT_DIR$/logic/map/couldMoveFromTo.js" />
+        <option value="$PROJECT_DIR$/logic/orders/legal/checkMove.js" />
+        <option value="$PROJECT_DIR$/logic/orders/legal/supportedMovePossible.js" />
+        <option value="$PROJECT_DIR$/logic/orders/legal/checkOrder.js" />
+        <option value="$PROJECT_DIR$/logic/orders/getUnitTypeFromLocationName.js" />
+        <option value="$PROJECT_DIR$/logic/orders/legal/checkSupportMove.js" />
         <option value="$PROJECT_DIR$/app.js" />
-        <option value="module.js" />
-        <option value="$PROJECT_DIR$/isAPower.js" />
-        <option value="$PROJECT_DIR$/splitOrdersByPowers.js" />
+        <option value="$PROJECT_DIR$/logic/orders/getSupportedMoveUnitTypeFromOrderTextArray.js" />
+        <option value="$PROJECT_DIR$/logic/orders/getSupportMoveOrderFromOrderTextArray.js" />
       </list>
     </option>
   </component>
@@ -166,6 +294,7 @@
     </navigator>
     <panes>
       <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -178,9 +307,76 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="dip2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="dip2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="logic" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="dip2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="dip2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="logic" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="setup" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="dip2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="dip2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="logic" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="orders" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="dip2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="dip2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="logic" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="map" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -189,7 +385,16 @@
     <property name="settings.editor.selected.configurable" value="Settings.JavaScript" />
     <property name="JavaScriptPreferStrict" value="false" />
     <property name="JavaScriptWeakerCompletionTypeGuess" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/logic" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/logic/map" />
+      <recent name="$PROJECT_DIR$/logic/orders" />
+      <recent name="$PROJECT_DIR$/probablyDead" />
+      <recent name="$PROJECT_DIR$/logic" />
+      <recent name="$PROJECT_DIR$" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -204,7 +409,7 @@
     </option>
   </component>
   <component name="RunManager" selected="Node.js.app.js">
-    <configuration default="false" name="extractPowerFromOrdersText.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" path-to-node="project" path-to-js-file="$PROJECT_DIR$/getPowerFromOrdersText.js" working-dir="$PROJECT_DIR$">
+    <configuration default="false" name="extractPowerFromOrdersText.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" path-to-node="project" path-to-js-file="$PROJECT_DIR$/logic/orders/getPowerFromOrdersText.js" working-dir="$PROJECT_DIR$">
       <method />
     </configuration>
     <configuration default="false" name="app.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" path-to-node="project" path-to-js-file="app.js" working-dir="$PROJECT_DIR$">
@@ -305,17 +510,28 @@
       <workItem from="1499695595697" duration="294000" />
       <workItem from="1499701215509" duration="2533000" />
       <workItem from="1499716276779" duration="4000" />
+      <workItem from="1500467657833" duration="4945000" />
+      <workItem from="1500475652263" duration="2206000" />
+      <workItem from="1500489660101" duration="91000" />
+      <workItem from="1500489793361" duration="4264000" />
+      <workItem from="1501254625148" duration="4713000" />
+      <workItem from="1501260393575" duration="1426000" />
+      <workItem from="1501483181594" duration="11480000" />
+      <workItem from="1501699894953" duration="130000" />
+      <workItem from="1502189163444" duration="4035000" />
+      <workItem from="1502193746485" duration="5650000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="27059000" />
+    <option name="totallyTimeSpent" value="65999000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="-1" width="1368" height="771" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2489019" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="TypeScript" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21815519" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -328,9 +544,8 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="TypeScript" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32882884" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -344,370 +559,385 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/splitOrdersByPowers.js</url>
-          <line>21</line>
-          <option name="timeStamp" value="6" />
+          <url>file://$PROJECT_DIR$/logic/orders/legal/orderPowerOwnsUnitInProvince.js</url>
+          <line>6</line>
+          <option name="timeStamp" value="18" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="7" />
+      <option name="time" value="20" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/area.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="26" lean-forward="false" selection-start-line="10" selection-start-column="26" selection-end-line="10" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/map.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="20" lean-forward="false" selection-start-line="12" selection-start-column="20" selection-end-line="12" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/getFleetConnections.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="21" column="0" lean-forward="true" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/getArmyConnections.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="9" column="42" lean-forward="true" selection-start-line="9" selection-start-column="42" selection-end-line="9" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="3" lean-forward="false" selection-start-line="17" selection-start-column="3" selection-end-line="17" selection-end-column="3" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/orders.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="13" lean-forward="true" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/getOrders.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="12" column="1" lean-forward="true" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/removeBlankElementsFromArray.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="13" column="0" lean-forward="true" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/order.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="30" lean-forward="true" selection-start-line="16" selection-start-column="30" selection-end-line="16" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/area.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="26" lean-forward="false" selection-start-line="10" selection-start-column="26" selection-end-line="10" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/map.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="20" lean-forward="false" selection-start-line="12" selection-start-column="20" selection-end-line="12" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/getFleetConnections.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="21" column="0" lean-forward="true" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/getArmyConnections.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="9" column="42" lean-forward="true" selection-start-line="9" selection-start-column="42" selection-end-line="9" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/getArrayOfLinesFromText.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="4" column="57" lean-forward="true" selection-start-line="4" selection-start-column="57" selection-end-line="4" selection-end-column="57" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="6" column="31" lean-forward="false" selection-start-line="6" selection-start-column="31" selection-end-line="6" selection-end-column="31" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/order.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="51" lean-forward="false" selection-start-line="9" selection-start-column="51" selection-end-line="9" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/area.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="26" lean-forward="false" selection-start-line="10" selection-start-column="26" selection-end-line="10" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/map/getFleetConnections.ts">
+    <entry file="file://$PROJECT_DIR$/logic/orders/getSupportedHoldProvinceNameFromOrderTextArray.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
-          <caret line="10" column="19" lean-forward="false" selection-start-line="10" selection-start-column="19" selection-end-line="10" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/getArmyConnections.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="9" column="42" lean-forward="true" selection-start-line="9" selection-start-column="42" selection-end-line="9" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/getFleetConnections.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="21" column="0" lean-forward="true" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/order.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="30" lean-forward="true" selection-start-line="16" selection-start-column="30" selection-end-line="16" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/removeBlankElementsFromArray.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="13" column="0" lean-forward="true" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/getArrayOfLinesFromText.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="7" column="24" lean-forward="false" selection-start-line="7" selection-start-column="24" selection-end-line="7" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/getEachOrderArray.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="7" column="17" lean-forward="false" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="89" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/getPower.ts" />
-    <entry file="file://$PROJECT_DIR$/const.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="5" column="3" lean-forward="false" selection-start-line="5" selection-start-column="3" selection-end-line="5" selection-end-column="84" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/getOrders.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/getPowerFromOrdersText.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="21" column="45" lean-forward="false" selection-start-line="21" selection-start-column="45" selection-end-line="21" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/getOrdersTextForPower.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="22" column="14" lean-forward="true" selection-start-line="22" selection-start-column="14" selection-end-line="22" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/removeBlanksFromArray.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="8" column="32" lean-forward="true" selection-start-line="8" selection-start-column="32" selection-end-line="8" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/getOrderTextArrayFromOrderText.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="11" column="1" lean-forward="true" selection-start-line="11" selection-start-column="1" selection-end-line="11" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/map.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="8406">
-          <caret line="469" column="26" lean-forward="false" selection-start-line="469" selection-start-column="26" selection-end-line="469" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/isAProvinceName.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="12" column="17" lean-forward="false" selection-start-line="12" selection-start-column="17" selection-end-line="12" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/get SupportedToProvinceNameFromOrderTextArray.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
           <caret line="8" column="31" lean-forward="false" selection-start-line="8" selection-start-column="31" selection-end-line="8" selection-end-column="31" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/getMoveToProvinceNameFromOrderTextArray.js">
+    <entry file="file://$PROJECT_DIR$/logic/orders/getSupportedFromProvinceNameFromOrderTextArray.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="36">
-          <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="53" />
+        <state relative-caret-position="120">
+          <caret line="8" column="31" lean-forward="false" selection-start-line="8" selection-start-column="31" selection-end-line="8" selection-end-column="31" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/getSupportedToProvinceNameFromOrderTextArray">
+    <entry file="file://$PROJECT_DIR$/logic/orders/getPowerFromOrdersText.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="15" selection-end-column="1" />
+        <state relative-caret-position="240">
+          <caret line="21" column="45" lean-forward="false" selection-start-line="21" selection-start-column="45" selection-end-line="21" selection-end-column="45" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/getSupportedOrderTypeFromOrderTextArray.js">
+    <entry file="file://$PROJECT_DIR$/logic/orders/getUnitLocationNameFromOrderTextArray.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="14" column="21" lean-forward="false" selection-start-line="14" selection-start-column="21" selection-end-line="14" selection-end-column="21" />
+        <state relative-caret-position="105">
+          <caret line="7" column="31" lean-forward="false" selection-start-line="7" selection-start-column="31" selection-end-line="7" selection-end-column="31" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/getSupportedHoldProvinceNameFromOrderTextArray.js">
+    <entry file="file://$PROJECT_DIR$/logic/orders/getMoveToProvinceNameFromOrderTextArray.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
+        <state relative-caret-position="120">
+          <caret line="8" column="31" lean-forward="false" selection-start-line="8" selection-start-column="31" selection-end-line="8" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/getHoldOrderFromOrderTextArray.js" />
+    <entry file="file://$PROJECT_DIR$/logic/orders/getSupportedToProvinceNameFromOrderTextArray">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
           <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/getUnitLocationNameFromOrderTextArray.js">
+    <entry file="file://$PROJECT_DIR$/logic/orders/getSupportedOrderTypeFromOrderTextArray.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="5" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="12" selection-end-column="1" />
+        <state relative-caret-position="240">
+          <caret line="16" column="1" lean-forward="true" selection-start-line="16" selection-start-column="1" selection-end-line="16" selection-end-column="1" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/getMoveFromProvinceNameFromOrderTextArray.js">
+    <entry file="file://$PROJECT_DIR$/logic/orders/removeBlankElementsFromArray.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
+        <state relative-caret-position="90">
+          <caret line="6" column="17" lean-forward="false" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/logic/orders/splitOrdersByPowers.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="123">
+          <caret line="14" column="16" lean-forward="false" selection-start-line="14" selection-start-column="16" selection-end-line="14" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/logic/orders/getOrdersArrayFromOrdersTextArray.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="10" column="18" lean-forward="false" selection-start-line="10" selection-start-column="18" selection-end-line="10" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/logic/orders/getOrderFromOrderTextArray.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="303">
+          <caret line="23" column="11" lean-forward="false" selection-start-line="23" selection-start-column="11" selection-end-line="23" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/logic/orders/getSupportOrderTypeFromOrderTextArray.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="0" lean-forward="true" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/logic/orders/getOrderTypeFromOrderTextArray.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="310">
+          <caret line="21" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/logic/orders/getHoldOrderFromOrderTextArray.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="7" lean-forward="true" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="67" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/logic/orders/getSupportHoldOrderFromOrderTextArray.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="15" column="42" lean-forward="true" selection-start-line="15" selection-start-column="42" selection-end-line="15" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/logic/setup/initialiseMapFromOrders.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="17" lean-forward="false" selection-start-line="1" selection-start-column="17" selection-end-line="1" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/logic/orders/getPowerFromOrderTextArray.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="3" lean-forward="false" selection-start-line="5" selection-start-column="3" selection-end-line="5" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/logic/orders/getMoveFromProvinceNameFromOrderTextArray.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="28" lean-forward="false" selection-start-line="7" selection-start-column="28" selection-end-line="7" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/logic/orders/getMoveOrderFromOrderTextArray.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="75" lean-forward="true" selection-start-line="7" selection-start-column="75" selection-end-line="7" selection-end-column="75" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/logic/orders/getArmyConnections.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="115">
+          <caret line="9" column="42" lean-forward="true" selection-start-line="9" selection-start-column="42" selection-end-line="9" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/logic/map/getProvinceFromProvinceName.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="8" column="15" lean-forward="false" selection-start-line="8" selection-start-column="15" selection-end-line="8" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/logic/map/fleetConnects.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="10" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/area.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/logic/orders/getOrdersArrayFromOrderTextFile.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="9" column="16" lean-forward="false" selection-start-line="9" selection-start-column="16" selection-end-line="9" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/logic/map/getUnits.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/units.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/logic/orders/getOrders.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
           <caret line="12" column="1" lean-forward="true" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/getUnitTypeFromOrderTextArray.js">
+    <entry file="file://$PROJECT_DIR$/logic/map/armyConnects.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="16" column="0" lean-forward="true" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+        <state relative-caret-position="45">
+          <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/getSupportedFromProvinceNameFromOrderTextArray.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="8" column="10" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/getProvinceByName.js">
+    <entry file="file://$PROJECT_DIR$/logic/map/placeUnit.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
-          <caret line="7" column="16" lean-forward="false" selection-start-line="7" selection-start-column="16" selection-end-line="7" selection-end-column="16" />
+          <caret line="6" column="87" lean-forward="false" selection-start-line="6" selection-start-column="87" selection-end-line="6" selection-end-column="87" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/getOrderTypeFromOrderTextArray.js">
+    <entry file="file://$PROJECT_DIR$/logic/setup/initialiseMap.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="19" column="21" lean-forward="false" selection-start-line="19" selection-start-column="21" selection-end-line="19" selection-end-column="21" />
+        <state relative-caret-position="480">
+          <caret line="32" column="0" lean-forward="true" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/getOrderFromOrderTextArray.js">
+    <entry file="file://$PROJECT_DIR$/logic/orders/legal/orderPowerOwnsUnitInProvince.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="16" column="18" lean-forward="false" selection-start-line="16" selection-start-column="18" selection-end-line="16" selection-end-column="18" />
+        <state relative-caret-position="45">
+          <caret line="3" column="0" lean-forward="true" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/getMoveOrderFromOrderTextArray.js">
+    <entry file="file://$PROJECT_DIR$/logic/orders/legal/checkPower.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="1" lean-forward="false" selection-start-line="16" selection-start-column="1" selection-end-line="16" selection-end-column="1" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#42#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/getHoldOrderFromOrderTextArray.js">
+    <entry file="file://$PROJECT_DIR$/logic/orders/legal/checkUnitType.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="1" lean-forward="false" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
+        <state relative-caret-position="120">
+          <caret line="10" column="5" lean-forward="true" selection-start-line="10" selection-start-column="5" selection-end-line="10" selection-end-column="5" />
+          <folding>
+            <element signature="e#0#42#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/logic/orders/legal/couldMoveFromTo.js" />
+    <entry file="file://$PROJECT_DIR$/logic/orders/legal/orderedUnitIsRightType.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="3" lean-forward="false" selection-start-line="2" selection-start-column="3" selection-end-line="2" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/logic/orders/get SupportedToProvinceNameFromOrderTextArray.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="31" lean-forward="false" selection-start-line="8" selection-start-column="31" selection-end-line="8" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/logic/orders/legal/checkMove.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="5" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/logic/map/couldMoveFromTo.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="53" lean-forward="false" selection-start-line="3" selection-start-column="53" selection-end-line="3" selection-end-column="53" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/logic/orders/getUnitTypeFromOrderTextArray.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="32" lean-forward="false" selection-start-line="6" selection-start-column="32" selection-end-line="6" selection-end-column="32" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/orders.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+        <state relative-caret-position="45">
+          <caret line="3" column="17" lean-forward="false" selection-start-line="3" selection-start-column="17" selection-end-line="3" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/logic/map/map.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="8" column="45" lean-forward="false" selection-start-line="8" selection-start-column="45" selection-end-line="8" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/logic/orders/legal/checkOrder.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="22" column="1" lean-forward="true" selection-start-line="22" selection-start-column="1" selection-end-line="22" selection-end-column="1" />
+          <folding>
+            <element signature="e#0#42#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/logic/orders/legal/supportedMovePossible.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="55" lean-forward="false" selection-start-line="6" selection-start-column="55" selection-end-line="6" selection-end-column="55" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/logic/orders/legal/checkSupportMove.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="65" lean-forward="true" selection-start-line="7" selection-start-column="65" selection-end-line="7" selection-end-column="65" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app.js">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="366">
+          <caret line="33" column="0" lean-forward="true" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/logic/orders/getUnitTypeFromLocationName.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="1" lean-forward="true" selection-start-line="6" selection-start-column="1" selection-end-line="6" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/logic/orders/getSupportOrderFromOrderTextArray.js">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="45">
-          <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="89" />
+          <caret line="3" column="45" lean-forward="false" selection-start-line="3" selection-start-column="45" selection-end-line="3" selection-end-column="45" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/isAPower.js">
+    <entry file="file://$PROJECT_DIR$/logic/orders/getSupportedMoveUnitTypeFromOrderTextArray.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="17" column="7" lean-forward="false" selection-start-line="17" selection-start-column="7" selection-end-line="17" selection-end-column="7" />
+        <state relative-caret-position="90">
+          <caret line="8" column="49" lean-forward="false" selection-start-line="8" selection-start-column="49" selection-end-line="8" selection-end-column="49" />
+          <folding>
+            <element signature="e#0#42#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/logic/orders/getSupportedToProvinceNameFromOrderTextArray.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="4" lean-forward="false" selection-start-line="5" selection-start-column="4" selection-end-line="5" selection-end-column="33" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/splitOrdersByPowers.js">
+    <entry file="file://$PROJECT_DIR$/logic/orders/getSupportMoveOrderFromOrderTextArray.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="338">
-          <caret line="33" column="6" lean-forward="false" selection-start-line="33" selection-start-column="6" selection-end-line="33" selection-end-column="6" />
+        <state relative-caret-position="240">
+          <caret line="18" column="93" lean-forward="false" selection-start-line="18" selection-start-column="93" selection-end-line="18" selection-end-column="93" />
           <folding>
             <element signature="e#0#42#0" expanded="false" />
           </folding>
