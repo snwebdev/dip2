@@ -4,15 +4,19 @@
 const checkPower = require('./checkPower');
 const checkUnitType = require('./checkUnitType');
 const checkMove = require('./checkMove');
-module.exports = function(units, order){
+const checkSupportHold = require('./checkSupportHoldOrder');
+
+module.exports = function(units, orders, order){
 
 
-checkPower(units, order);
+checkPower(units,  order);
 checkUnitType(units, order);
 switch(order.orderType){
+    case "Hold" : checkHold(units, order);
+    break
     case "Move" : checkMove(order);
     break;
-    case"SupportMove": checkSupportMove(order);
+    case"SupportHold": checkSupportHoldOrder(units, order);
     break;
 }
 

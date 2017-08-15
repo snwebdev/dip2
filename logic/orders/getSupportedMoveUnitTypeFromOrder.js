@@ -3,9 +3,12 @@
  */
 const getSupportedFromProvinceNameFromOrderTextArray = require('./getSupportedFromProvinceNameFromOrderTextArray');
 const getUnitTypeFromLocationName = require('./getUnitTypeFromLocationName');
-module.exports = function(orderTextArray){
-    var fromName = getSupportedFromProvinceNameFromOrderTextArray(orderTextArray);
-    if (fromName === -1) return -1;
-    return getUnitTypeFromLocationName(fromName);
+
+
+module.exports = function(units, order){
+    var supportedUnitLocation = order.supportMoveFromName;
+    if (supportedUnitLocation === -1) return -1;
+    return getUnitTypeFromLocationName(units, supportedUnitLocation);
+
 
 }

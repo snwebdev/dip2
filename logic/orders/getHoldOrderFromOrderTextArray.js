@@ -4,11 +4,11 @@ const getUnitTypeFromOrderTextArray = require('./getUnitTypeFromOrderTextArray')
 const getUnitLocationName = require('./getUnitLocationNameFromOrderTextArray');
 const getPowerFromOrderTextArray = require('./getPowerFromOrderTextArray');
 
-module.exports = function(powerName, orderTextArray){
+module.exports = function(orderTextArray){
     order = {};
     order.power = getPowerFromOrderTextArray(orderTextArray);
     order.type = "Hold";
     order.unitType = getUnitTypeFromOrderTextArray(orderTextArray);
-    order.unitLocationName = getUnitLocationName(orderTextArray);
+    order.unitLocation = getUnitLocationName(orderTextArray);
     return order
 }

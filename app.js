@@ -22,18 +22,31 @@ const armyConnects = require('./logic/map/armyConnects');
 const orderPowerOwnsUnitInProvince = require('./logic/orders/legal/orderPowerOwnsUnitInProvince');
 const orderedUnitIsRightType = require('./logic/orders/legal/orderedUnitIsRightType');
 const checkOrder = require('./logic/orders/legal/checkOrder');
-initialiseMap(units);
-console.log("units="+ JSON.stringify(units));
+const processOrders = require('./logic/orders/process/processOrders');
+const addSupportedMoveUnitTypeToOrders = require('./logic/orders/addSupportedMoveUnitTpeToOrders');
 
-var ordersArray = getOrdersArrayFromOrdersTextFile();
-console.log(ordersArray);
-order = ordersArray[1];
-console.log("before check "+ JSON.stringify(order));
-checkOrder(units, order);
+const resolve = require('./logic/orders/resolve/resolve');
 
 
 
-console.log("after check "+ JSON.stringify(order));
+
+var orders = getOrdersArrayFromOrdersTextFile(units);
+initialiseMapFromOrders(units, orders);
+addSupportedMoveUnitTypeToOrders(units, orders);
+
+console.log("units");
+console.log(units);
+console.log("orders");
+console.log(orders);
+
+
+processOrders(units, orders);
+console.log("after orderProcessing... ");
+console.log(orders);
+
+resolve(units, orders)
+
+console.log('end');
 
 
 
