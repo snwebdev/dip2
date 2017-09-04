@@ -1,7 +1,7 @@
 module.exports = function (order) {
     if (
         order.type === "SupportHold" ||
-        order.Type === "SUpportMove"
+        order.type === "SupportMove"
     ) {
         return true;
     } else {

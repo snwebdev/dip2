@@ -11,9 +11,10 @@ module.exports = function (order, province) {
             break;
 
         case "SupportHold":
+
             if (
                 order.unitLocation === province ||
-                order.SupportHold === province
+                order.supportedHoldProvinceName === province
             ) {
                 return true;
             }

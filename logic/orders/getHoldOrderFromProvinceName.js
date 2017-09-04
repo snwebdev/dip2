@@ -5,7 +5,7 @@ module.exports = function(orders, provinceName){
         if(
             thisOrder.unitLocation === provinceName &&
                 thisOrder.type === "Hold" &&
-                thisOrder.outcome === "success"
+                thisOrder.outcome === "legal"
         ){
             return thisOrder;
         }

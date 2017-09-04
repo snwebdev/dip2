@@ -33,6 +33,7 @@ const resolve = require('./logic/orders/resolve/resolve');
 var orders = getOrdersArrayFromOrdersTextFile(units);
 initialiseMapFromOrders(units, orders);
 addSupportedMoveUnitTypeToOrders(units, orders);
+//orders = processOrders(units, orders);
 
 console.log("units");
 console.log(units);
@@ -40,11 +41,14 @@ console.log("orders");
 console.log(orders);
 
 
-processOrders(units, orders);
+orders = processOrders(units, orders);
 console.log("after orderProcessing... ");
 console.log(orders);
 
 resolve(units, orders)
+
+console.log("after resolving orders... ");
+console.log(orders);
 
 console.log('end');
 

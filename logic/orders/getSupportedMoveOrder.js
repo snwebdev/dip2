@@ -2,9 +2,9 @@ const getMoveOrderFromProvinceName = require('./getMoveOrderFromProvinceName');
 
 module.exports = function(orders, order){
 
-    var MoveProvince = order.supportedHoldProvinceName;
+    var moveProvince = order.supportMoveFromName;
 
-    var supportedOrder = getHoldOrderFromProvinceName(orders, holdProvince);
+    var supportedOrder = getMoveOrderFromProvinceName(orders, moveProvince);
 
     return supportedOrder;
 }
