@@ -1,0 +1,27 @@
+module.exports = function(units){
+    units.forEach((unit) =>{
+        var text = unit.powerName + ": ";
+
+        text = text + unit.unitType;
+        text = text + " in ";
+        if(unit.move === "retreat"){
+            text = text + unit.retreatFrom;
+            text = text + " needs to retreat or disband.";
+        }
+
+        if(unit.move === "Remain"){
+            text = text + unit.locationName;
+            text = text + " remains.";
+        }
+
+        if(unit.move === "Moved"){
+            text = text + unit.movedFrom;
+            text = text + " moves to ";
+            text = text + unit.locationName;
+        }
+        console.log(text);
+        }
+
+    )
+    return;
+}

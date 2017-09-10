@@ -6,6 +6,7 @@ const getOrderTypeFromOrdersTextArray = require('./getOrderTypeFromOrderTextArra
 const getMoveOrderFromOrderTextArray = require ('./getMoveOrderFromOrderTextArray');
 const getHoldOrderFromOrderTextArray = require ('./getHoldOrderFromOrderTextArray');
 const getSupportOrderFromOrderTextArray = require('./getSupportOrderFromOrderTextArray');
+const makeOrderTextFromOrderTextArray = require('./makeOrderTextFromOrderTextArray');
 
 
 module.exports = function (orderTextArray) {
@@ -27,5 +28,6 @@ module.exports = function (orderTextArray) {
             order = {};
 
     }
+    order.orderText = makeOrderTextFromOrderTextArray(orderTextArray);
     return order;
 }

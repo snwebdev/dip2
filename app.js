@@ -26,6 +26,7 @@ const processOrders = require('./logic/orders/process/processOrders');
 const addSupportedMoveUnitTypeToOrders = require('./logic/orders/addSupportedMoveUnitTpeToOrders');
 
 const resolve = require('./logic/orders/resolve/resolve');
+const printUnitOutcome = require('./logic/orders/printUnitOutcome');
 
 
 
@@ -49,6 +50,7 @@ resolve(units, orders)
 
 console.log("after resolving orders... ");
 console.log(orders);
+printUnitOutcome(units);
 
 console.log('end');
 

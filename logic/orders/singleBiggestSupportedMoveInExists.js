@@ -5,7 +5,7 @@ module.exports = function(orders, province){
     if(moveToProvinceOrders.length === 0) return false;
     var highestSupport = -1;
 
-    orders.forEach((order) => {
+    moveToProvinceOrders.forEach((order) => {
         if(order.support === highestSupport) {
             highestSupport = -1;
         } else {

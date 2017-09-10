@@ -9,35 +9,36 @@ const failOrder = require('../failOrder');
 const failHoldInProvince = require('../failHoldInProvince');
 const markForRetreat = require('../markForRetreat');
 const getOrderForUnitInProvince = require('../getOrderForUnitInProvince');
+const succeedHoldOrder = require('../succeedHoldOrder');
+const failAllMoveIns = require('../failAllMoveIns');
 
-module.exports = function(units, orders, province, provinceOrders){
+module.exports = function (units, orders, province, provinceOrders) {
 
-        console.log("resolving hold.................");
-        var holdOrder = getOrderForUnitInProvince(province, orders);
+    console.log("resolving hold.................");
+    var holdOrder = getOrderForUnitInProvince(province, orders);
 
-        if(
-            singleBiggestSupportedMoveInExists(orders, province) &&
-            singleBiggestSupportedMoveInGreaterThanHoldSupport(orders, province)
-        ){
-            //singleBiggestMoveIn wins
-            var winningOrder = getSingleBiggestSupportedMoveIn(orders, province);
-            winningOrder.outcome = "Succeeds";
+    if (singleBiggestSupportedMoveInExists(orders, province) &&
+        singleBiggestSupportedMoveInGreaterThanHoldSupport(orders, province)) {
 
-            //all other moveIns fail
-            failOtherMoveIns(orders, winningOrder);
-            //hold fails
-            failHoldInProvince(orders, province);
+        //singleBiggestMoveIn wins
+        var winningOrder = getSingleBiggestSupportedMoveIn(orders, province);
+        winningOrder.outcome = "Succeeds";
 
-            //holding unit needs to retreat
-            markForRetreat(orders, province);
-        } else{
-                //hold succeeds
-                //all moveIns fail
-        }
+        //all other moveIns fail
+        failOtherMoveIns(orders, winningOrder);
 
+        //hold fails
+        failHoldInProvince(orders, province);
 
+        //holding unit needs to retreat
+        markForRetreat(orders, province);
+    } else {
+        //hold succeeds
+        succeedHoldOrder(holdOrder);
 
-
+        //all moveIns fail
+        failAllMoveIns(orders, province);
+    }
 
     return;
 }
