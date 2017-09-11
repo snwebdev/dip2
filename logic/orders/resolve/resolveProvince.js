@@ -9,6 +9,7 @@ const failOrder = require('../failOrder');
 const failHoldInProvince = require('../failHoldInProvince');
 const resolveProvinceHolding = require('./resolveProvinceHolding');
 const resolveProvinceEmpty = require('./resolveProvinceEmpty');
+const resolveProvinceOccupiedNotHolding = require('./resolveProvinceOccupiedNotHolding');
 
 module.exports = function(units, orders, province, ordersByProvince, provinceOrders){
     console.log("looking at "+ province);
@@ -17,6 +18,13 @@ module.exports = function(units, orders, province, ordersByProvince, provinceOrd
         isHolding(province, orders)
     ){
        resolveProvinceHolding(units, orders, province, provinceOrders);
+    }
+
+    if(
+        isOccupied(units, province) &&
+        !isHolding(province, orders)
+    ){
+        resolveProvinceOccupiedNotHolding(units, orders, province, provinceOrders);
     }
 
 

@@ -5,6 +5,8 @@ const succeedUncutSupportOrders = require('../succeedUncutSupportOrders');
 const addUncutSupports = require('./addUncutSupports');
 const resolveProvince = require('./resolveProvince');
 const markUnitsForMovement = require('./markUnitsMovement');
+const getMoveDependencies = require('./getMoveDependencies');
+const resolveDependencies = require('./resolveDependencies');
 
 
 module.exports = function(units, orders){
@@ -29,6 +31,13 @@ module.exports = function(units, orders){
          //remove province (and orders) from ordersByProvince
         ordersByProvince.shift();
     }
+
+
+    console.log("move dependencies..............................................");
+    console.log(getMoveDependencies(orders));
+    resolveDependencies(orders);
+
+
     markUnitsForMovement(units, orders);
 
     return;

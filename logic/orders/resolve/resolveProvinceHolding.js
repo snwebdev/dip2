@@ -9,7 +9,7 @@ const failOrder = require('../failOrder');
 const failHoldInProvince = require('../failHoldInProvince');
 const markForRetreat = require('../markForRetreat');
 const getOrderForUnitInProvince = require('../getOrderForUnitInProvince');
-const succeedHoldOrder = require('../succeedHoldOrder');
+const succeedHoldOrder = require('../succeedOrder');
 const failAllMoveIns = require('../failAllMoveIns');
 
 module.exports = function (units, orders, province, provinceOrders) {

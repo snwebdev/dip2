@@ -14,10 +14,10 @@ module.exports = function(units){
             text = text + " remains.";
         }
 
-        if(unit.move === "Moved"){
-            text = text + unit.movedFrom;
+        if(unit.move === "Move"){
+            text = text + unit.locationName
             text = text + " moves to ";
-            text = text + unit.locationName;
+            text = text + unit.moveToName;
         }
         console.log(text);
         }
