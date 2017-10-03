@@ -9,7 +9,7 @@ const getSoleMoveInNoSupport = require('../getSoleMoveInNoSupport');
 const markSucceedsIfOtherSucceeds = require('../markSucceedsIfOtherSucceeds');
 const failOrder = require('../failOrder');
 
-module.exports = function (units, orders, province, provinceOrders) {
+module.exports = function (units, orders, province) {
     if (singleBiggestSupportedMoveInExists(orders, province)){
         var singleBiggestSupportedMoveIn = getSingleBiggestSupportedMoveIn(orders, province);
         var singleBiggestSupportedMoveInSupport = singleBiggestSupportedMoveIn.support;

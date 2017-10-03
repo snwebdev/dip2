@@ -23,6 +23,7 @@ module.exports = function (orders, units, order) {
 
     if(couldMoveFromToByConvoy(order.unitType, order.unitLocation, order.moveToName)){
         order.legal = true;
+        order.couldMoveToByConvoy = true;
         order.outcome = "DependsOnConvoy";
         return;
     }

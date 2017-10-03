@@ -15,7 +15,7 @@ module.exports = function(units, orders){
 
     processMoveOrders(units, orders);
     processSupportMoveOrders(units, orders);
-    processMoveOrders(units, orders);
+   // processMoveOrders(units, orders);
     processConvoyOrders(units, orders);
     attachWaterAreas(orders);
 

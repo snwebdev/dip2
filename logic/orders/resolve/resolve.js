@@ -11,6 +11,9 @@ const getConvoyLocations = require('../getConvoyLocations');
 const getConvoyChains = require('./getConvoyChains');
 const resolveConvoyMoves = require('./resolveConvoyMoves');
 const resolveConvoyChains = require('./resolveConvoyChains');
+var resolveConvoyHolds = require('./resolveConvoyHolds');
+const addConvoyChainsToMoves = require('./addConvoyChainsToMoves');
+
 
 
 module.exports = function(units, orders){
@@ -20,22 +23,28 @@ module.exports = function(units, orders){
     cutSupports(orders);
     succeedUncutSupportOrders(orders);
     addUncutSupports(orders);
+    resolveConvoyHolds(orders);
     var convoyChains = getConvoyChains(orders);
-    resolveConvoyChains(convoyChains, orders);
+    addConvoyChainsToMoves(orders, convoyChains);
+    //resolveConvoyChains(convoyChains, orders);
 
 
 
-    var ordersByProvince = getOrdersByProvince(orders, []);
-    var orderRelevantProvinces = [];
+
+
+    var orderRelevantProvinces = getOrderRelevantProvinces(orders);
+    var ordersByProvince = getOrdersByProvince(orders, orderRelevantProvinces);
 
 
     while (ordersByProvince.length > 0) {
         var prov = ordersByProvince[0][0];
         var resolvingOrders = ordersByProvince[0][1];
-        resolveProvince(units, orders, prov, resolvingOrders);
+        resolveProvince(units, orders, prov, ordersByProvince, resolvingOrders, convoyChains);
+        ordersByProvince.shift();
+
     }
 
-    resolveConvoyMoves(orders);
+   // resolveConvoyMoves(orders);
 
     resolveConditionals(orders);
 

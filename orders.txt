@@ -1,8 +1,24 @@
 
 France
-F Lon - ENG
-A Wal - Lon
-F ENG h
+A Wal - Bre
+F ENG c Wal - Bre
+
+England
+F NTH - ENG
+F Pic s NTH - ENG
+
+
+
+
+Germany
+F IRI c Wal - NAO
+F MAO c IRI - Bre
+
+Italy
+F NAf - MAO
+F WMS s NAf - MAO
+
+
 
 
 

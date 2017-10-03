@@ -13,7 +13,7 @@ const failAllMoveIns = require('../failAllMoveIns');
 
 module.exports = function(units, orders, province, provinceOrders){
 
-    console.log("resolving empty province.................");
+   // console.log("resolving empty province.................");
 
     if(singleBiggestSupportedMoveInExists(orders, province)){
         //singleBiggestMoveIn wins
