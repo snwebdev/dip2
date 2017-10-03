@@ -1,5 +1,7 @@
 module.exports = function (order, province) {
 
+    if(!order.legal) return false;
+
 
     switch (order.type) {
 
@@ -21,7 +23,6 @@ module.exports = function (order, province) {
             break;
 
         case "Move":
-            return true;
             if (
                 order.unitLocation === province ||
                 order.moveToName === province
@@ -35,6 +36,14 @@ module.exports = function (order, province) {
                 order.unitLocation === province ||
                 order.supportMoveFromName === province ||
                 order.supportMoveToName === province
+            ) {
+                return true;
+            }
+            break;
+        case "Convoy":
+            if (
+                order.unitLocation === province ||
+                order.convoyTo === province
             ) {
                 return true;
             }

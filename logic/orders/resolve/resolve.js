@@ -5,8 +5,12 @@ const succeedUncutSupportOrders = require('../succeedUncutSupportOrders');
 const addUncutSupports = require('./addUncutSupports');
 const resolveProvince = require('./resolveProvince');
 const markUnitsForMovement = require('./markUnitsMovement');
-const getMoveDependencies = require('./getMoveDependencies');
-const resolveDependencies = require('./resolveDependencies');
+const resolveConditionals = require('./resolveConditionals');
+const markPossibleConvoyChains = require('./markPossibleConvoyChains');
+const getConvoyLocations = require('../getConvoyLocations');
+const getConvoyChains = require('./getConvoyChains');
+const resolveConvoyMoves = require('./resolveConvoyMoves');
+const resolveConvoyChains = require('./resolveConvoyChains');
 
 
 module.exports = function(units, orders){
@@ -16,27 +20,24 @@ module.exports = function(units, orders){
     cutSupports(orders);
     succeedUncutSupportOrders(orders);
     addUncutSupports(orders);
+    var convoyChains = getConvoyChains(orders);
+    resolveConvoyChains(convoyChains, orders);
 
-    var ordersByProvince = [];
+
+
+    var ordersByProvince = getOrdersByProvince(orders, []);
     var orderRelevantProvinces = [];
 
-    orderRelevantProvinces = getOrderRelevantProvinces(orders);
-    var ordersByProvince = getOrdersByProvince(orders, orderRelevantProvinces);
 
-    while (ordersByProvince.length > 0){
+    while (ordersByProvince.length > 0) {
         var prov = ordersByProvince[0][0];
         var resolvingOrders = ordersByProvince[0][1];
-         resolveProvince(units, orders, prov, resolvingOrders);
-
-         //remove province (and orders) from ordersByProvince
-        ordersByProvince.shift();
+        resolveProvince(units, orders, prov, resolvingOrders);
     }
 
+    resolveConvoyMoves(orders);
 
-    console.log("move dependencies..............................................");
-    console.log(getMoveDependencies(orders));
-    resolveDependencies(orders);
-
+    resolveConditionals(orders);
 
     markUnitsForMovement(units, orders);
 

@@ -16,6 +16,9 @@ module.exports = function (orderTextArray) {
         case "h":
             return "Hold";
 
+        case "c":
+            return "Convoy";
+
         default:
            return -1;
     }

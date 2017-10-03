@@ -17,10 +17,10 @@ module.exports = function(units, orders, province, ordersByProvince, provinceOrd
         isOccupied(units, province) &&
         isHolding(province, orders)
     ){
-       resolveProvinceHolding(units, orders, province, provinceOrders);
+       resolveProvinceHolding(orders, province, provinceOrders);
     }
 
-    if(
+    else if(
         isOccupied(units, province) &&
         !isHolding(province, orders)
     ){
@@ -29,7 +29,7 @@ module.exports = function(units, orders, province, ordersByProvince, provinceOrd
 
 
 
-    if(
+    else if(
         !isOccupied(units, province)
     ){
         resolveProvinceEmpty(units, orders, province, provinceOrders);

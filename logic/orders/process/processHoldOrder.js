@@ -1,5 +1,6 @@
 const orderPowerOwnsUnitInProvince = require('../legal/orderPowerOwnsUnitInProvince');
 const orderedUnitTypeCorrect = require('../legal/orderedUnitTypeCorrect');
+const failOrder = require('../failOrder');
 
 module.exports = function (units, order) {
     order.orderPowerOwnsUnit = orderPowerOwnsUnitInProvince(units, order);
@@ -11,9 +12,10 @@ module.exports = function (units, order) {
         order.orderPowerOwnsUnit &&
         order.orderedUnitTypeCorrect
     ) {
-        order.outcome = "legal";
+        order.legal = true;
     } else {
-        order.outcome = "fail";
+        order.legal = false;
+        failOrder(order);
     }
 
     return;

@@ -1,7 +1,7 @@
 module.exports = function(order){
     var orderedProvinces = [];
 
-    if(order.outcome === 'legal'){
+    if(order.legal){
         if(orderedProvinces.indexOf(order.unitLocation) === -1){
             orderedProvinces.push(order.unitLocation);
         }

@@ -7,6 +7,8 @@ const getMoveOrderFromOrderTextArray = require ('./getMoveOrderFromOrderTextArra
 const getHoldOrderFromOrderTextArray = require ('./getHoldOrderFromOrderTextArray');
 const getSupportOrderFromOrderTextArray = require('./getSupportOrderFromOrderTextArray');
 const makeOrderTextFromOrderTextArray = require('./makeOrderTextFromOrderTextArray');
+const getConvoyOrderFromOrderTextArray = require('./getConvoyOrderFromOrderTextaAray');
+
 
 
 module.exports = function (orderTextArray) {
@@ -24,10 +26,14 @@ module.exports = function (orderTextArray) {
         case "Support":
             order = getSupportOrderFromOrderTextArray(orderTextArray);
             break;
+        case "Convoy":
+            order = getConvoyOrderFromOrderTextArray(orderTextArray);
+            break
         default:
             order = {};
 
     }
     order.orderText = makeOrderTextFromOrderTextArray(orderTextArray);
+    order.resolved = false;
     return order;
 }

@@ -12,7 +12,7 @@ const getOrderForUnitInProvince = require('../getOrderForUnitInProvince');
 const succeedHoldOrder = require('../succeedOrder');
 const failAllMoveIns = require('../failAllMoveIns');
 
-module.exports = function (units, orders, province, provinceOrders) {
+module.exports = function (orders, province, provinceOrders) {
 
     console.log("resolving hold.................");
     var holdOrder = getOrderForUnitInProvince(province, orders);

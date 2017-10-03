@@ -1,5 +1,5 @@
 module.exports = function(order){
-  if(order.outcome = 'legal'){
+  if(order.legal){
       return order.unitLocation;
   }
 }

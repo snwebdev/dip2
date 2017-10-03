@@ -1,3 +1,3 @@
 module.exports = function(order){
-    order.outcome = "fail";
+    return order.type === "Move";
 }

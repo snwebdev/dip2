@@ -3,7 +3,7 @@ module.exports = function(orders, province){
     orders.forEach((order) => {
         if( order.type === "Move" &&
             order.moveToName === province &&
-            order.outcome === 'legal'){
+            order.legal){
             moveToProvinceOrders.push(order);
         }
     })

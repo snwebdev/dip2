@@ -2,7 +2,7 @@ const getOrderRelevantProvincesFromHoldOrder = require('./getOrderRelevantProvin
 const getOrderRelevantProvincesFromMoveOrder = require('./getOrderRelevantProvincesFromMoveOrder');
 const getOrderRelevantProvincesFromSupportMoveOrder = require('./getOrderRelevantProvincesFromSupportMoveOrder');
 const getOrderRelevantProvincesFromSupportHoldOrder = require('./getOrderRelevantProvincesFromSupportHoldOrder');
-
+const getOrderRelevantProvincesFromConvoyOrder = require('./getOrderRelevantProvincesFromConvoyOrder');
 module.exports = function (orders) {
     var orderedProvinces = [];
     var newOrders;
@@ -29,7 +29,11 @@ module.exports = function (orders) {
                 orders = getOrderRelevantProvincesFromSupportMoveOrder(order);
                 newOrders = (orders);
                 break;
-
+            case "Convoy" :
+                // sort this
+                orders = getOrderRelevantProvincesFromConvoyOrder(order);
+                newOrders = (orders);
+                break;
 
         }
 

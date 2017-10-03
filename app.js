@@ -27,6 +27,7 @@ const addSupportedMoveUnitTypeToOrders = require('./logic/orders/addSupportedMov
 
 const resolve = require('./logic/orders/resolve/resolve');
 const printUnitOutcome = require('./logic/orders/printUnitOutcome');
+const connecetedByWater = require('./logic/map/connectedByWater');
 
 
 
@@ -42,7 +43,7 @@ console.log("orders");
 console.log(orders);
 
 
-orders = processOrders(units, orders);
+processOrders(units, orders);
 console.log("after orderProcessing... ");
 console.log(orders);
 
@@ -53,6 +54,8 @@ console.log(orders);
 printUnitOutcome(units);
 
 console.log('end');
+
+
 
 
 
