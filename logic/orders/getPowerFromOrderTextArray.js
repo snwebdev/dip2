@@ -10,7 +10,9 @@ module.exports = function(orderTextArray){
 
     if (powers.indexOf(power) > -1){
         return power;
-    }else
+    }else{
 
-    return -1;
+        order.powerErrorText = power;
+        return -1
+    }
 }

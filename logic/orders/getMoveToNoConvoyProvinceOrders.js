@@ -1,10 +1,14 @@
+const isMoveToProvince = require('./isMoveToProvince');
+const moveDependsOnConvoy = require('./resolve/moveDependsOnConvoy');
+
 module.exports = function(orders, province){
     var moveToProvinceOrders = [];
     orders.forEach((order) => {
-        if( order.outcome !== "DependsOnConvoy" &&
+        if( !moveDependsOnConvoy(order) &&
             order.type === "Move" &&
-            order.moveToName === province &&
-            order.legal){
+            isMoveToProvince(order, province) &&
+            order.legal)
+        {
             moveToProvinceOrders.push(order);
         }
     })

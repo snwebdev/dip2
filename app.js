@@ -37,20 +37,20 @@ initialiseMapFromOrders(units, orders);
 addSupportedMoveUnitTypeToOrders(units, orders);
 //orders = processOrders(units, orders);
 
-console.log("units");
-console.log(units);
-console.log("orders");
-console.log(orders);
+// console.log("units");
+// console.log(units);
+// console.log("orders");
+// console.log(orders);
 
 
 processOrders(units, orders);
-console.log("after orderProcessing... ");
-console.log(orders);
+// console.log("after orderProcessing... ");
+// console.log(orders);
 
 resolve(units, orders)
 
-console.log("after resolving orders... ");
-console.log(orders);
+// console.log("after resolving orders... ");
+// console.log(orders);
 printUnitOutcome(units);
 
 console.log('end');

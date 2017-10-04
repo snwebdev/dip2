@@ -116,6 +116,7 @@ const map = [
         name: "Bul",
         fullName: "Bulgaria",
         type: "Inland",
+        multipleCoasts: true,
         waterArea: [3],
         armyNeighbour: ["Rum", "Con", "Gre", "Ser"],
         fleetNeighbour:[],
@@ -124,6 +125,7 @@ const map = [
         name: "Bul(nc)",
         fullName: "Bulgaria, north coast",
         type: "Coastal",
+        multipleCoasts: true,
         waterArea: [2],
         armyNeighbour: [],
         fleetNeighbour:["Rum", "BLA", "Con"]
@@ -132,6 +134,7 @@ const map = [
         name: "Bul(sc)",
         fullName: "Bulgaria, south coast",
         type: "Coastal",
+        multipleCoasts: true,
         waterArea: [1],
         armyNeighbour: [],
         fleetNeighbour:["Con", "AEG", "Gre"]
@@ -469,6 +472,7 @@ const map = [
     {
         name: "Spa",
         fullName: "Spain",
+        multipleCoasts: true,
         armyNeighbour: ["Gas", "Mar", "Por"],
         fleetNeighbour:[""]
     },
@@ -476,6 +480,7 @@ const map = [
         name: "Spa(nc)",
         fullName: "Spain (north coast)",
         type: "Coastal",
+        multipleCoasts: true,
         waterArea: [1],
         armyNeighbour: [],
         fleetNeighbour:["MAO", "Gas", "Por"]
@@ -484,6 +489,7 @@ const map = [
         name: "Spa(sc)",
         fullName: "Spain (south coast)",
         type: "Coastal",
+        multipleCoasts: true,
         waterArea: [1],
         armyNeighbour: [],
         fleetNeighbour:["GoL", "WMS", "MAO"]
@@ -491,6 +497,8 @@ const map = [
     {
         name: "StP",
         fullName: "Saint Petersburg",
+        type: "Inland",
+        multipleCoasts: true,
         armyNeighbour: ["Mos", "Lvn", "Fin"],
         fleetNeighbour:[]
     },
@@ -498,6 +506,7 @@ const map = [
         name: "StP(nc)",
         fullName: "Saint Petersburg (north coast)",
         type: "Coastal",
+        multipleCoasts: true,
         waterArea: [2],
         armyNeighbour: [],
         fleetNeighbour:["BAR", "Nor"]
@@ -506,6 +515,7 @@ const map = [
         name: "StP(sc)",
         fullName: "Saint Petersburg (south coast)",
         type: "Coastal",
+        multipleCoasts: true,
         waterArea: [2],
         armyNeighbour: [],
         fleetNeighbour:["Lvn", "GoB", "Fin"]
