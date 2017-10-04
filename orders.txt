@@ -1,9 +1,8 @@
 
 France
-
-F BAR - StP(nc)
-
-F Lvn - StP(sc)
+F WMS - Spa(sc)
+A Spa h
+F MAO s WMS - Spa(sc)
 
 
 

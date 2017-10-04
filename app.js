@@ -49,8 +49,8 @@ processOrders(units, orders);
 
 resolve(units, orders)
 
-// console.log("after resolving orders... ");
-// console.log(orders);
+console.log("after resolving orders... ");
+console.log(orders);
 printUnitOutcome(units);
 
 console.log('end');

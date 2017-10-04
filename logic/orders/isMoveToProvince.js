@@ -8,7 +8,7 @@ module.exports = function (order, province) {
        for(var i = 0; i < multiples.length; i++) {
             if (order.legal &&
                 order.type === "Move" &&
-                order.moveToName === province) {
+                order.moveToName === multiples[i].name) {
                 return true;
             }
         }
