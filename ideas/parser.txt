@@ -1,0 +1,16 @@
+Think it should have a parser that looks at order text file and removes any line that is not a valid order,
+then the rest can be processed.
+
+per line
+array of words delimited by spaces
+line is a power or order
+trim spaces
+if not power, must be order
+order[0] must be unitype - "A" or "F"
+order[1] must be unitLocation "Bre" or "StP(sc)" etc.
+order[2] must be order type ("h", "-", "s", "c")
+hold - F Lon h
+move - F Lon - ENG
+support F NTH s Lon - ENG
+convoy F ENG c Lon - Bre
+

@@ -8,6 +8,7 @@ const getHoldOrderFromOrderTextArray = require ('./getHoldOrderFromOrderTextArra
 const getSupportOrderFromOrderTextArray = require('./getSupportOrderFromOrderTextArray');
 const makeOrderTextFromOrderTextArray = require('./makeOrderTextFromOrderTextArray');
 const getConvoyOrderFromOrderTextArray = require('./getConvoyOrderFromOrderTextaAray');
+const getUnidentifiedOrderFromOrderTextArray = require('./validate/getUnidentifiedOrderFromOrderTextArray');
 
 
 
@@ -28,9 +29,10 @@ module.exports = function (orderTextArray) {
             break;
         case "Convoy":
             order = getConvoyOrderFromOrderTextArray(orderTextArray);
-            break
-        default:
-            order = {};
+            break;
+        case "unidentified":
+            order  = getUnidentifiedOrderFromOrderTextArray(orderTextArray);
+
 
     }
     order.orderText = makeOrderTextFromOrderTextArray(orderTextArray);

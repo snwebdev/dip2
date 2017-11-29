@@ -20,7 +20,7 @@ module.exports = function (orderTextArray) {
             return "Convoy";
 
         default:
-           return -1;
+           return "unidentified";
     }
 }
 

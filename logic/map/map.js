@@ -86,6 +86,7 @@ const map = [
     {
         name: "BLA",
         fullName: "The Black Sea",
+        type: "Water",
         armyNeighbour: [],
         waterArea: [3],
         fleetNeighbour:["Sev", "Arm", "Ank", "Con", "Bul(nc)", "Rum"]
@@ -384,6 +385,7 @@ const map = [
     {
         name: "Par",
         fullName: "Paris",
+        type: "Inland",
         armyNeighbour: ["Pic", "Bur", "Gas", "Bre"],
         fleetNeighbour:[]
     },
@@ -397,6 +399,7 @@ const map = [
     {
         name: "Pie",
         fullName: "Piedmont",
+        type: "Coastal",
         waterArea: [1],
         armyNeighbour: ["Tyr", "Ven", "Tus", "Mar"],
         fleetNeighbour:[]
@@ -427,6 +430,7 @@ const map = [
     {
         name: "Ruh",
         fullName: "Ruhr",
+        type: "Inland",
         armyNeighbour: ["Hol", "Kie", "Mun", "Bur", "Bel"],
         fleetNeighbour:[]
     },
@@ -449,6 +453,7 @@ const map = [
     {
         name: "Sil",
         fullName: "Silesia",
+        type: "Inland",
         waterArea: [1],
         armyNeighbour: ["Ber", "Pru", "War", "Gal", "Sil", "Mun"],
         fleetNeighbour:[]
@@ -607,6 +612,7 @@ const map = [
     {
         name: "War",
         fullName: "Warsaw",
+        type: "Inland",
         armyNeighbour: ["Pru", "Lvn", "Mos", "Ukr", "Gal", "Sil"],
         fleetNeighbour:[]
     },

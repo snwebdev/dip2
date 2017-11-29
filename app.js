@@ -28,12 +28,21 @@ const addSupportedMoveUnitTypeToOrders = require('./logic/orders/addSupportedMov
 const resolve = require('./logic/orders/resolve/resolve');
 const printUnitOutcome = require('./logic/orders/printUnitOutcome');
 const connecetedByWater = require('./logic/map/connectedByWater');
+const checkOrdersLegal = require('./logic/orders/legal/checkOrdersLegal');
+const checkUnitsCanBeInProvinces = require('./logic/orders/legal/checkUnitsCanBeInProvinces');
+const removeRejectedOrders = require('./logic/orders/removeRejectedOrders');
+const rejectMalformedOrders = require('./logic/orders/rejectMalformedOrders');
 
 
 
 
 var orders = getOrdersArrayFromOrdersTextFile(units);
+var rejectedOrders = [];
+rejectMalformedOrders(units, orders, rejectedOrders);
 initialiseMapFromOrders(units, orders);
+checkUnitsCanBeInProvinces(orders);
+removeRejectedOrders(units, orders, rejectedOrders);
+checkOrdersLegal(units, orders);
 addSupportedMoveUnitTypeToOrders(units, orders);
 //orders = processOrders(units, orders);
 
