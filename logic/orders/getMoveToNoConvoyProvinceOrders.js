@@ -1,6 +1,7 @@
 const isMoveToProvince = require('./isMoveToProvince');
 const moveDependsOnConvoy = require('./resolve/moveDependsOnConvoy');
 
+
 module.exports = function(orders, province){
     var moveToProvinceOrders = [];
     orders.forEach((order) => {
