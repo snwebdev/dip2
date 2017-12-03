@@ -4,8 +4,8 @@
 const map = require('./../map/map');
 const isAProvince = require('./isAProvinceName');
 
-module.exports = function(text){
-    for(var i = 0; i < map.length; i++){
+module.exports = function (text) {
+    for (var i = 0; i < map.length; i++) {
         var prov = map[i];
         if (prov.name === text) {
             return true;

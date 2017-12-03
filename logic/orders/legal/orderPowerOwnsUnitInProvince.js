@@ -3,11 +3,11 @@
  */
 
 
-module.exports = function(units, order){
+module.exports = function (units, order) {
     var power = order.power;
     var provinceName = order.unitLocation;
-    for(var i = 0; i < units.length; i++) {
-        if(units[i].locationName === provinceName){
+    for (var i = 0; i < units.length; i++) {
+        if (units[i].locationName === provinceName) {
             return units[i].powerName === power;
         }
     }

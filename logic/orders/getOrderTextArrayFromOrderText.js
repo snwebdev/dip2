@@ -4,8 +4,8 @@
 
 const removeBlankElementsFromArray = require('./removeBlankElementsFromArray');
 
-module.exports = function (power, orderText){
-    var array =[];
+module.exports = function (power, orderText) {
+    var array = [];
     array.push(power);
     var orderTextArray = orderText.split(' ');
     orderTextArray.forEach((text) => {

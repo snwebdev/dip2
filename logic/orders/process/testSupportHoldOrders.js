@@ -1,3 +1,3 @@
-module.exports = function(units, orders){
+module.exports = function (units, orders) {
 
 }

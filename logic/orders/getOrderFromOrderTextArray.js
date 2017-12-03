@@ -3,13 +3,12 @@
  */
 
 const getOrderTypeFromOrdersTextArray = require('./getOrderTypeFromOrderTextArray');
-const getMoveOrderFromOrderTextArray = require ('./getMoveOrderFromOrderTextArray');
-const getHoldOrderFromOrderTextArray = require ('./getHoldOrderFromOrderTextArray');
+const getMoveOrderFromOrderTextArray = require('./getMoveOrderFromOrderTextArray');
+const getHoldOrderFromOrderTextArray = require('./getHoldOrderFromOrderTextArray');
 const getSupportOrderFromOrderTextArray = require('./getSupportOrderFromOrderTextArray');
 const makeOrderTextFromOrderTextArray = require('./makeOrderTextFromOrderTextArray');
 const getConvoyOrderFromOrderTextArray = require('./getConvoyOrderFromOrderTextaAray');
 const getUnidentifiedOrderFromOrderTextArray = require('./validate/getUnidentifiedOrderFromOrderTextArray');
-
 
 
 module.exports = function (orderTextArray) {
@@ -17,7 +16,7 @@ module.exports = function (orderTextArray) {
 
     // order.power = getPowerFromOrderTextArray(orderTextArray);
     orderType = getOrderTypeFromOrdersTextArray(orderTextArray);
-    switch(orderType) {
+    switch (orderType) {
         case "Move":
             order = getMoveOrderFromOrderTextArray(orderTextArray);
             break;
@@ -31,7 +30,7 @@ module.exports = function (orderTextArray) {
             order = getConvoyOrderFromOrderTextArray(orderTextArray);
             break;
         case "unidentified":
-            order  = getUnidentifiedOrderFromOrderTextArray(orderTextArray);
+            order = getUnidentifiedOrderFromOrderTextArray(orderTextArray);
 
 
     }

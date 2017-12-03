@@ -6,10 +6,10 @@ const getOrderFromOrderTextArray = require("./getOrderFromOrderTextArray");
 const getSupportedMoveUnitTypeFromOrder = require('./getSupportedMoveUnitTypeFromOrder');
 
 
-module.exports = function(ordersTextArray){
+module.exports = function (ordersTextArray) {
     var ordersArray = [];
     ordersTextArray.forEach((e) => {
-        var order =getOrderFromOrderTextArray(e);
+        var order = getOrderFromOrderTextArray(e);
         ordersArray.push(order);
     });
     // go back over to get supported move unit type

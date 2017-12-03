@@ -11,17 +11,17 @@ module.exports = function (orders, units, order) {
     order.couldMoveTo = couldMoveFromTo(order.unitType, order.unitLocation, order.moveToName);
 
 
-    if(!order.orderPowerOwnsUnit || !order.orderedUnitTypeCorrect){
+    if (!order.orderPowerOwnsUnit || !order.orderedUnitTypeCorrect) {
         order.outcome = "Fails";
         return;
     }
 
-    if(order.couldMoveTo){
+    if (order.couldMoveTo) {
         order.legal = true;
         return;
     }
 
-    if(couldMoveFromToByConvoy(order.unitType, order.unitLocation, order.moveToName)){
+    if (couldMoveFromToByConvoy(order.unitType, order.unitLocation, order.moveToName)) {
         order.legal = true;
         order.couldMoveToByConvoy = true;
         order.outcome = "DependsOnConvoy";

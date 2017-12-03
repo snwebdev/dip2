@@ -4,7 +4,6 @@ const getUnitTypeFromLocationName = require('../getUnitTypeFromLocationName');
 module.exports = function (units, orders, order) {
 
 
-
     var supportedUnitLocation = order.supportedMoveFromName;
     var powerThatOwnsUnitInSupportedUnitLocation = getPowerOfUnitFromLocationName(units, supportedUnitLocation);
     var unitType = getUnitTypeFromLocationName(supportedUnitLocation);

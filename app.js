@@ -33,17 +33,25 @@ const checkUnitsCanBeInProvinces = require('./logic/orders/legal/checkUnitsCanBe
 const removeRejectedOrders = require('./logic/orders/removeRejectedOrders');
 const rejectMalformedOrders = require('./logic/orders/rejectMalformedOrders');
 
+const getRowsFromOrderTextFile = require('./logic/parse/getRowsFromOrderTextFile');
+const firstRowIsAPower = require('./logic/parse/firstRowIsAPower');
 
 
 
-var orders = getOrdersArrayFromOrdersTextFile(units);
-var rejectedOrders = [];
-rejectMalformedOrders(units, orders, rejectedOrders);
-initialiseMapFromOrders(units, orders);
-checkUnitsCanBeInProvinces(orders);
-removeRejectedOrders(units, orders, rejectedOrders);
-checkOrdersLegal(units, orders);
-addSupportedMoveUnitTypeToOrders(units, orders);
+var rows = getRowsFromOrderTextFile();
+console.log("first row is a power: " +firstRowIsAPower(powers, rows) );
+
+
+
+//
+// var orders = getOrdersArrayFromOrdersTextFile(units);
+// var rejectedOrders = [];
+// rejectMalformedOrders(units, orders, rejectedOrders);
+// initialiseMapFromOrders(units, orders);
+// checkUnitsCanBeInProvinces(orders);
+// removeRejectedOrders(units, orders, rejectedOrders);
+// checkOrdersLegal(units, orders);
+// addSupportedMoveUnitTypeToOrders(units, orders);
 //orders = processOrders(units, orders);
 
 // console.log("units");
@@ -52,15 +60,15 @@ addSupportedMoveUnitTypeToOrders(units, orders);
 // console.log(orders);
 
 
-processOrders(units, orders);
+//processOrders(units, orders);
 // console.log("after orderProcessing... ");
 // console.log(orders);
 
-resolve(units, orders)
-
-console.log("after resolving orders... ");
-console.log(orders);
-printUnitOutcome(units);
+// resolve(units, orders)
+//
+// console.log("after resolving orders... ");
+// console.log(orders);
+// printUnitOutcome(units);
 
 console.log('end');
 

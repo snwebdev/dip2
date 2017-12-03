@@ -12,17 +12,17 @@ module.exports = function (units, orders) {
     orders.forEach((order) => {
         var province = order.unitLocation;
 
-        if (order.action === 'Retreat or Disband' && order.outcome !== "Succeeds"){
-            for(var i = 0; i < units.length; i++){
+        if (order.action === 'Retreat or Disband' && order.outcome !== "Succeeds") {
+            for (var i = 0; i < units.length; i++) {
                 var unit = units[i];
-                if(unit.locationName === province && unit.move !== "Moved"){
+                if (unit.locationName === province && unit.move !== "Moved") {
                     unit.locationName = null;
                     unit.retreatFrom = province;
                     unit.move = "retreat";
                 }
             }
         }
-        if(order.type == "Move" && order.outcome === "Succeeds"){
+        if (order.type == "Move" && order.outcome === "Succeeds") {
             var unitIndex = getUnitIndexFromOrder(units, order);
             var unit = units[unitIndex];
             unit.moveToName = order.moveToName;

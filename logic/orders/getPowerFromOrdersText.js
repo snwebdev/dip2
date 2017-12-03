@@ -19,12 +19,12 @@ const isAPower = require('./isAPower');
 
 
 module.exports = function (powers, ordersTextArray) {
-   for (var i = 0; i < ordersTextArray.length; i++){
-       var line = ordersTextArray[i];
-       if (isAPower(powers, line)) {
-           return line;
-       }
-   }
-return -1;
+    for (var i = 0; i < ordersTextArray.length; i++) {
+        var line = ordersTextArray[i];
+        if (isAPower(powers, line)) {
+            return line;
+        }
+    }
+    return -1;
 
 }

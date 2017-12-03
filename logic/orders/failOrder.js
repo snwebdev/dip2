@@ -1,4 +1,4 @@
-module.exports = function(order){
+module.exports = function (order) {
     order.outcome = "Fails";
     delete order.action;
     delete order.dependsOn;

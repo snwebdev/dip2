@@ -10,7 +10,7 @@ module.exports = function (orders) {
 
     orders.forEach((order) => {
 
-    newOrders = [];
+        newOrders = [];
         switch (order.type) {
 
             case "Hold" :
@@ -40,7 +40,7 @@ module.exports = function (orders) {
 
         newOrders.forEach((newOrder) => {
 
-            if(orderedProvinces.indexOf(newOrder) === -1) {
+            if (orderedProvinces.indexOf(newOrder) === -1) {
                 orderedProvinces.push(newOrder);
             }
         })

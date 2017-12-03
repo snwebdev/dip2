@@ -3,9 +3,9 @@
  */
 const getProvinceFromProvinceName = require('./getProvinceFromProvinceName');
 
-module.exports = function (fromProvinceName, toProvinceName){
+module.exports = function (fromProvinceName, toProvinceName) {
     var prov = getProvinceFromProvinceName(fromProvinceName);
-    console.log("prov="+JSON.stringify(prov));
+    console.log("prov=" + JSON.stringify(prov));
     console.log(toProvinceName);
     console.log(prov.armyNeighbour.indexOf(toProvinceName));
 

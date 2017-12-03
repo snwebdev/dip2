@@ -8,10 +8,10 @@ module.exports = function (orders, order) {
 
     var chain = getConditionalChain(orders, order);
     var end = chain[chain.length - 1];
-    if(end.outcome === "Succeeds"){
+    if (end.outcome === "Succeeds") {
         succeedChain(chain);
     }
-    if(end.outcome === "Fails"){
+    if (end.outcome === "Fails") {
         failChain(chain);
     }
 

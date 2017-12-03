@@ -1,6 +1,6 @@
 const failOrder = require('../failOrder');
 
-module.exports = function(loop){
+module.exports = function (loop) {
     loop.forEach((order) => {
         failOrder((order));
     })

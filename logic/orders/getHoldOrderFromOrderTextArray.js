@@ -1,10 +1,10 @@
-const getMoveFromProvinceNameFromOrderTextArray = require ('./getMoveFromProvinceNameFromOrderTextArray');
-const getMoveToProvinceNameFromOrderTextArray = require ('./getMoveToProvinceNameFromOrderTextArray');
+const getMoveFromProvinceNameFromOrderTextArray = require('./getMoveFromProvinceNameFromOrderTextArray');
+const getMoveToProvinceNameFromOrderTextArray = require('./getMoveToProvinceNameFromOrderTextArray');
 const getUnitTypeFromOrderTextArray = require('./getUnitTypeFromOrderTextArray');
 const getUnitLocationName = require('./getUnitLocationNameFromOrderTextArray');
 const getPowerFromOrderTextArray = require('./getPowerFromOrderTextArray');
 
-module.exports = function(orderTextArray){
+module.exports = function (orderTextArray) {
     order = {};
     order.power = getPowerFromOrderTextArray(orderTextArray);
     order.type = "Hold";

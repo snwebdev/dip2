@@ -1,4 +1,4 @@
-module.exports = function(orders){
+module.exports = function (orders) {
     orders.forEach((order) => {
         validateOrder(order);
     })

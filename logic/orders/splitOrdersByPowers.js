@@ -8,9 +8,9 @@ const isAPower = require('./isAPower');
 const getOrderTextArrayFromOrderText = require("./getOrderTextArrayFromOrderText");
 
 
-const  powers = ["Austria", "England", "France", "Germany", "Italy", "Russia", "Turkey"];
+const powers = ["Austria", "England", "France", "Germany", "Italy", "Russia", "Turkey"];
 
-module.exports = function() {
+module.exports = function () {
 
     var orders = getOrders();
     orders = removeBlankElementsFromArray(orders);
@@ -22,14 +22,14 @@ module.exports = function() {
     var splitOrders = [];
     var lookingFor = "power"
 
-    for(var i = 0; i < orders.length; i++) {
-       var line = orders[i];
-        if (isAPower(line)){
-           power = line;
-           continue;
+    for (var i = 0; i < orders.length; i++) {
+        var line = orders[i];
+        if (isAPower(line)) {
+            power = line;
+            continue;
         } else {
-           orderArray = getOrderTextArrayFromOrderText(power, line);
-           ordersArray.push(orderArray);
+            orderArray = getOrderTextArrayFromOrderText(power, line);
+            ordersArray.push(orderArray);
         }
 
     }

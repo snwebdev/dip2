@@ -1,6 +1,6 @@
 module.exports = function (order, province) {
 
-    if(!order.legal) return false;
+    if (!order.legal) return false;
 
 
     switch (order.type) {

@@ -1,4 +1,3 @@
-
-module.exports = function(units, provinceName){
+module.exports = function (units, provinceName) {
 
 }

@@ -1,9 +1,9 @@
 const processConvoyOrder = require('./processConvoyOrder');
 
-module.exports = function(units, orders){
+module.exports = function (units, orders) {
     orders.forEach((order) => {
 
-        if(order.type === "Convoy"){
+        if (order.type === "Convoy") {
             processConvoyOrder(units, order);
         }
     })

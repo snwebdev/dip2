@@ -1,4 +1,4 @@
-module.exports = function(order){
+module.exports = function (order) {
     order.cut = true;
     order.outcome = "failed";
 }

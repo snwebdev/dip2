@@ -1,12 +1,12 @@
-module.exports = function(orders, provinceName){
-    for(var i = 0; i < orders.length; i++){
+module.exports = function (orders, provinceName) {
+    for (var i = 0; i < orders.length; i++) {
         var thisOrder = orders[i];
 
-        if(
+        if (
             thisOrder.unitLocation === provinceName &&
-                thisOrder.type === "Hold" &&
-                thisOrder.outcome === "legal"
-        ){
+            thisOrder.type === "Hold" &&
+            thisOrder.outcome === "legal"
+        ) {
             return thisOrder;
         }
     }

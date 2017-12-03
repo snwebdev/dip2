@@ -1,8 +1,8 @@
-module.exports = function(orders){
+module.exports = function (orders) {
     orders.forEach((order) => {
 
         var orderType = order.type;
-        if(orderType === "Move" ||
+        if (orderType === "Move" ||
             orderType === "Hold" ||
             orderType === "Convoy" ||
             orderType === "Support") {

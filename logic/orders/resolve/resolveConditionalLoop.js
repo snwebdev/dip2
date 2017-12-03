@@ -6,13 +6,13 @@ const failLoop = require('./failLoop');
 
 module.exports = function (orders, order) {
 
-  var loop = getConditionalLoop(orders, order);
-    if(loop.length > 2){
+    var loop = getConditionalLoop(orders, order);
+    if (loop.length > 2) {
         succeedLoop(loop);
-    }else{
+    } else {
         failLoop(loop);
     }
 
-  return;
+    return;
 }
 

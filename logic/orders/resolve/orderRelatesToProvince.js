@@ -1,3 +1,3 @@
-module.exports = function(orders, order){
+module.exports = function (orders, order) {
     return;
 }

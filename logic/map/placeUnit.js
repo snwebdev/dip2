@@ -3,10 +3,10 @@
  */
 
 
-module.exports = function(units, powerName, unitType, locationName){
+module.exports = function (units, powerName, unitType, locationName) {
     var element = {powerName: powerName, unitType: unitType, locationName: locationName};
-    for (var i = 0; i < units.length; i++){
-        if(units[i][0] === locationName){
+    for (var i = 0; i < units.length; i++) {
+        if (units[i][0] === locationName) {
             units[i] = element;
             return;
         }

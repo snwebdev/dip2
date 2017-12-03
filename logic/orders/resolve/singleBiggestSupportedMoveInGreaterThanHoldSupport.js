@@ -1,3 +1,3 @@
-module.exports = function(orders, province){
+module.exports = function (orders, province) {
 
 }

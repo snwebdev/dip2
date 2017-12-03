@@ -1,4 +1,4 @@
-module.exports = function(order){
+module.exports = function (order) {
     var ordereRelevantProvinces = [];
     var orderType = order.type
 

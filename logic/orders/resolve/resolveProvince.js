@@ -11,27 +11,26 @@ const resolveProvinceHolding = require('./resolveProvinceHolding');
 const resolveProvinceEmpty = require('./resolveProvinceEmpty');
 const resolveProvinceOccupiedNotHolding = require('./resolveProvinceOccupiedNotHolding');
 
-module.exports = function(units, orders, province, ordersByProvince, provinceOrders){
-   // console.log("looking at "+ province);
-    if(
+module.exports = function (units, orders, province, ordersByProvince, provinceOrders) {
+    // console.log("looking at "+ province);
+    if (
         isOccupied(units, province) &&
         isHolding(province, orders)
-    ){
-       resolveProvinceHolding(orders, province);
+    ) {
+        resolveProvinceHolding(orders, province);
     }
 
-    else if(
+    else if (
         isOccupied(units, province) &&
         !isHolding(province, orders)
-    ){
+    ) {
         resolveProvinceOccupiedNotHolding(units, orders, province);
     }
 
 
-
-    else if(
+    else if (
         !isOccupied(units, province)
-    ){
+    ) {
         resolveProvinceEmpty(units, orders, province, provinceOrders);
     }
 

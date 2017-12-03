@@ -1,10 +1,10 @@
 const isMoveToProvince = require('./isMoveToProvince');
 
 
-module.exports = function(orders, province){
+module.exports = function (orders, province) {
     var movesToProvince = [];
     orders.forEach((order) => {
-        if(isMoveToProvince(order, province)){
+        if (isMoveToProvince(order, province)) {
             movesToProvince.push(order);
         }
     })

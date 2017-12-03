@@ -3,7 +3,6 @@ const getPowerOfUnitFromLocationName = require('../../map/getPowerOfUnitFromLoca
 module.exports = function (units, orders, order) {
 
 
-
     var supportedUnitLocation = order.supportedHoldProvinceName;
     var powerThatOwnsUnitInSupportedUnitLocation = getPowerOfUnitFromLocationName(units, supportedUnitLocation);
 

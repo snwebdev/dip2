@@ -6,7 +6,7 @@ const removeBlankElementsFromArray = require("./removeBlankElementsFromArray");
 const splitOrdersByPowers = require('./splitOrdersByPowers');
 const getOrdersArrayFromOrdersTextArray = require("./getOrdersArrayFromOrdersTextArray");
 
-module.exports = function(units){
+module.exports = function (units) {
     var orders = getOrders();
     orders = removeBlankElementsFromArray(orders);
     orders = splitOrdersByPowers(orders);

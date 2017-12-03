@@ -1,13 +1,13 @@
 const getProvinceFromProvinceName = require('./getProvinceFromProvinceName');
 
-module.exports = function(unitType, fromName, toName){
+module.exports = function (unitType, fromName, toName) {
     var from = getProvinceFromProvinceName(fromName);
 
-    if(unitType === "Army") {
+    if (unitType === "Army") {
         return from.armyNeighbour.indexOf(toName) > -1
     }
 
-    if(unitType ==="Fleet") {
+    if (unitType === "Fleet") {
         return from.fleetNeighbour.indexOf(toName) > -1
     }
 

@@ -5,7 +5,7 @@
 const fs = require('fs');
 
 const ordersFile = "orders.txt";
-const ordersText = fs.readFileSync(ordersFile,  'utf-8');
+const ordersText = fs.readFileSync(ordersFile, 'utf-8');
 
 
 module.exports = function () {

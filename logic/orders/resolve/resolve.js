@@ -15,8 +15,7 @@ var resolveConvoyHolds = require('./resolveConvoyHolds');
 const addConvoyChainsToMoves = require('./addConvoyChainsToMoves');
 
 
-
-module.exports = function(units, orders){
+module.exports = function (units, orders) {
     console.log("");
     console.log("Resolving orders");
 
@@ -27,9 +26,6 @@ module.exports = function(units, orders){
     var convoyChains = getConvoyChains(orders);
     addConvoyChainsToMoves(orders, convoyChains);
     //resolveConvoyChains(convoyChains, orders);
-
-
-
 
 
     var orderRelevantProvinces = getOrderRelevantProvinces(orders);
@@ -44,7 +40,7 @@ module.exports = function(units, orders){
 
     }
 
-   // resolveConvoyMoves(orders);
+    // resolveConvoyMoves(orders);
 
     resolveConditionals(orders);
 

@@ -10,14 +10,14 @@ const markSucceedsIfOtherSucceeds = require('../markSucceedsIfOtherSucceeds');
 const failOrder = require('../failOrder');
 
 module.exports = function (units, orders, province) {
-    if (singleBiggestSupportedMoveInExists(orders, province)){
+    if (singleBiggestSupportedMoveInExists(orders, province)) {
         var singleBiggestSupportedMoveIn = getSingleBiggestSupportedMoveIn(orders, province);
         var singleBiggestSupportedMoveInSupport = singleBiggestSupportedMoveIn.support;
 
         //check if moveIN from MoveTo
         var provinceOrder = getOrderForUnitInProvince(province, orders);
-        if(provinceOrder.moveToName === singleBiggestSupportedMoveIn.unitLocation){
-            if(provinceOrder.support > singleBiggestSupportedMoveIn.support){
+        if (provinceOrder.moveToName === singleBiggestSupportedMoveIn.unitLocation) {
+            if (provinceOrder.support > singleBiggestSupportedMoveIn.support) {
                 //provinceOrderWins
                 succeedOrder(provinceOrder);
 
@@ -27,7 +27,7 @@ module.exports = function (units, orders, province) {
                 //all other move ins loose
                 failOtherMoveIns(order, singleBiggestSupportedMoveIn)
             }
-            if(provinceOrder.support === singleBiggestSupportedMoveIn.support){
+            if (provinceOrder.support === singleBiggestSupportedMoveIn.support) {
                 //provinceOrder fails
                 failOrder(provinceOrder);
 
@@ -37,7 +37,7 @@ module.exports = function (units, orders, province) {
                 //all other move ins fails
                 failOtherMoveIns(orders, singleBiggestSupportedMoveIn);
             }
-            if(provinceOrder.support < singleBiggestSupportedMoveIn.support){
+            if (provinceOrder.support < singleBiggestSupportedMoveIn.support) {
                 //provinceOrder fails
                 fail(provinceOrder);
 
@@ -52,7 +52,7 @@ module.exports = function (units, orders, province) {
 
     }
 
-    if(soleMoveInNoSupportExist(orders, province)){
+    if (soleMoveInNoSupportExist(orders, province)) {
         order = getSoleMoveInNoSupport(orders, province);
         dependsOnOrder = getOrderForUnitInProvince(province, orders);
         markSucceedsIfOtherSucceeds(orders, order, dependsOnOrder);

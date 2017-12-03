@@ -5,7 +5,7 @@ module.exports = function (order, province) {
     if (hasMultipleCoasts(province)) {
         var multiples = getMuliplesFromProvNameStump(province.substr(0, 3));
 
-       for(var i = 0; i < multiples.length; i++) {
+        for (var i = 0; i < multiples.length; i++) {
             if (order.legal &&
                 order.type === "Move" &&
                 order.moveToName === multiples[i].name) {

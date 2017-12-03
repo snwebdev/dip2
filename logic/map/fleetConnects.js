@@ -3,7 +3,7 @@
  */
 const getProvinceFromProvinceName = require('./getProvinceFromProvinceName');
 
-module.exports = function (fromProvinceName, toProvinceName){
+module.exports = function (fromProvinceName, toProvinceName) {
     var prov = getProvinceFromProvinceName(fromProvinceName);
 
     return prov.fleetNeighbour.indexOf(toProvinceName) > -1

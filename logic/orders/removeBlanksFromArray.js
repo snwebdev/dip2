@@ -4,12 +4,12 @@
 
 const removeBlankelementsFromArray = require('/orders/removeBlankElementsFromArray');
 
-module.exports = function(array){
+module.exports = function (array) {
     var newArray = [];
     array.forEach((element) => {
         if (
-            element !== ''){
-           newArray.push(element);
+            element !== '') {
+            newArray.push(element);
         }
     })
     newArray = removeBlankelementsFromArray(newArray);

@@ -2,7 +2,7 @@ const getConvoys = require('./getConvoys');
 const resolveProvinceHolding = require('./resolveProvinceHolding');
 const getMovesToProvince = require('../getMovesToProvince');
 
-module.exports = function(orders){
+module.exports = function (orders) {
     var convoys = getConvoys(orders);
 
     convoys.forEach((order) => {

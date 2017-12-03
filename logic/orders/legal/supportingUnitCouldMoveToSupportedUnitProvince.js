@@ -1,6 +1,6 @@
 const couldMoveFromTo = require('../../map/couldMoveFromTo');
 
-module.exports = function(units, order){
+module.exports = function (units, order) {
     supportingUnitLocationName = order.unitLocation;
     supportingUnitType = order.unitType;
     supportedUnitLocationName = order.supportedHoldProvinceName;

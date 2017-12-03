@@ -3,11 +3,11 @@
  */
 const orderPowerOwnsUnitInProvince = require('./orderPowerOwnsUnitInProvince');
 
-module.exports = function(units, order){
-    if (orderPowerOwnsUnitInProvince(units, order)){
+module.exports = function (units, order) {
+    if (orderPowerOwnsUnitInProvince(units, order)) {
         order.checkPower = true;
-    }else {
+    } else {
         order.checkPower = false;
     }
-        return;
+    return;
 }

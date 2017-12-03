@@ -11,11 +11,11 @@ const markForRetreat = require('../markForRetreat');
 const getOrderForUnitInProvince = require('../getOrderForUnitInProvince');
 const failAllMoveIns = require('../failAllMoveIns');
 
-module.exports = function(units, orders, province, provinceOrders){
+module.exports = function (units, orders, province, provinceOrders) {
 
-   // console.log("resolving empty province.................");
+    // console.log("resolving empty province.................");
 
-    if(singleBiggestSupportedMoveInExists(orders, province)){
+    if (singleBiggestSupportedMoveInExists(orders, province)) {
         //singleBiggestMoveIn wins
         var winningOrder = getSingleBiggestSupportedMoveIn(orders, province);
         winningOrder.outcome = "Succeeds";
@@ -23,15 +23,10 @@ module.exports = function(units, orders, province, provinceOrders){
         //all other moveIns fail
         failOtherMoveIns(orders, winningOrder);
     } else {
-       // all moveIns fail
+        // all moveIns fail
         failAllMoveIns(orders, province);
 
     }
-
-
-
-
-
 
 
     return;

@@ -1,6 +1,6 @@
 module.exports = function (order) {
 
-      return  order.type === "Convoy"
+    return order.type === "Convoy"
 
 
 }

@@ -1,9 +1,9 @@
 const processHoldOrder = require('./processHoldOrder');
 
-module.exports = function(units, orders){
+module.exports = function (units, orders) {
     orders.forEach((order) => {
 
-        if(order.type === "Hold"){
+        if (order.type === "Hold") {
             processHoldOrder(units, order);
         }
     })

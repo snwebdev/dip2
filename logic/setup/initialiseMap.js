@@ -1,6 +1,6 @@
 const placeUnit = require("../map/placeUnit");
 
-module.exports = function(units){
+module.exports = function (units) {
 
     placeUnit(units, "England", "Fleet", "Lon");
     placeUnit(units, "England", "Fleet", "Edi");
@@ -30,7 +30,6 @@ module.exports = function(units){
     placeUnit(units, "Turkey", "Fleet", "Ank");
     placeUnit(units, "Turkey", "Army", "Con");
     placeUnit(units, "Turkey", "Army", "Smy");
-
 
 
     return units;

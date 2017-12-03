@@ -1,6 +1,6 @@
 const getHoldOrderFromProvinceName = require('./getHoldOrderFromProvinceName');
 
-module.exports = function(orders, order){
+module.exports = function (orders, order) {
 
     var holdProvince = order.supportedHoldProvinceName;
 

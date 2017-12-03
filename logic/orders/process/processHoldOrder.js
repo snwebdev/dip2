@@ -6,7 +6,7 @@ module.exports = function (units, order) {
     order.orderPowerOwnsUnit = orderPowerOwnsUnitInProvince(units, order);
     order.orderedUnitTypeCorrect = orderedUnitTypeCorrect(units, order);
 
-if (order.rejected) return;
+    if (order.rejected) return;
 
     if (
         order.orderPowerOwnsUnit &&

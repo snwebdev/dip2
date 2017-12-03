@@ -1,11 +1,11 @@
 const failOrder = require('./failOrder');
 
-module.exports = function(orders, province){
+module.exports = function (orders, province) {
     orders.forEach((order) => {
-        if(
+        if (
             order.type === "Move" &&
             order.moveToName === province
-        ){
+        ) {
             failOrder(order);
         }
     })

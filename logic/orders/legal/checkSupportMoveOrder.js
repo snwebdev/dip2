@@ -7,7 +7,7 @@ module.exports = function (units, orders, order) {
     order.orderPowerOwnsUnitInProvince = orderPowerOwnsUnitInProvince(units, order);
     order.supportedMoveFromProvinceIsOccupied = supportedMoveFromProvinceIsOccupied(units, order);
     order.supportedUnitOrderedToMove = supportedUnitOrderedToMove(units, orders, order);
-    order.supportingUnitCanSupportMoveToSupportedMoveToProvince = couldSupportMoveTo(order.unitType, order.unitLocation,order.supportMoveToName );
+    order.supportingUnitCanSupportMoveToSupportedMoveToProvince = couldSupportMoveTo(order.unitType, order.unitLocation, order.supportMoveToName);
 
     if (
         order.orderPowerOwnsUnitInProvince &&

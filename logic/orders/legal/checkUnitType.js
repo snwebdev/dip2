@@ -3,10 +3,10 @@
  */
 const orderedUnitIsRightType = require('./orderedUnitIsRightType');
 
-module.exports = function(units, order){
-    if (orderedUnitIsRightType(units, order)){
+module.exports = function (units, order) {
+    if (orderedUnitIsRightType(units, order)) {
         order.checkUnitType = true;
-    }else {
+    } else {
         order.checkUnitType = false;
     }
     return;

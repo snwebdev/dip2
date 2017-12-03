@@ -1,12 +1,12 @@
 var orderRelatedToProvince = require('./orderRelatedToProvince');
 
-module.exports = function(orders, province){
+module.exports = function (orders, province) {
     var relatedOrders = [];
     orders.forEach((order) => {
-        if(
+        if (
             orderRelatedToProvince(order, province)
         // relatedOrders.indexOf(order) === -1
-        ){
+        ) {
             relatedOrders.push(order);
         }
     })

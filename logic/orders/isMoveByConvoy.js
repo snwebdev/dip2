@@ -1,5 +1,5 @@
-module.exports = function(order){
+module.exports = function (order) {
     return (order.type === "Move" &&
-    order.outcome === "DependsOnConvoy")
+        order.outcome === "DependsOnConvoy")
 
 }

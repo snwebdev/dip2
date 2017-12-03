@@ -1,3 +1,3 @@
-module.exports = function(order){
+module.exports = function (order) {
     return order.unitLocation;
 }

@@ -1,8 +1,8 @@
-module.exports = function(units, provinceName){
+module.exports = function (units, provinceName) {
 
 
-    for(var i = 0; i < units.length; i++) {
+    for (var i = 0; i < units.length; i++) {
 
-        if(units[i].locationName === provinceName) return units[i].powerName;
+        if (units[i].locationName === provinceName) return units[i].powerName;
     }
 }

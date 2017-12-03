@@ -13,7 +13,7 @@ const succeedHoldOrder = require('../succeedOrder');
 const failAllMoveIns = require('../failAllMoveIns');
 const failConvoyInProvince = require('../failConvoyInProvince');
 
-module.exports = function (orders, province ) {
+module.exports = function (orders, province) {
 
     console.log("resolving hold.................");
     var holdOrder = getOrderForUnitInProvince(province, orders);
@@ -30,7 +30,7 @@ module.exports = function (orders, province ) {
 
         //hold fails
         failHoldInProvince(orders, province);
-        failConvoyInProvince(orders,province);
+        failConvoyInProvince(orders, province);
 
         //holding unit needs to retreat
         markForRetreat(orders, province);

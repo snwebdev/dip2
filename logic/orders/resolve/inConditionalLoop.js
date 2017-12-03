@@ -1,8 +1,8 @@
-module.exports = function(orders, order){
+module.exports = function (orders, order) {
     var first = order;
-    while(order.hasOwnProperty('dependsOn')){
+    while (order.hasOwnProperty('dependsOn')) {
         order = order.dependsOn;
-        if(order === first){
+        if (order === first) {
             return true;
         } else {
 

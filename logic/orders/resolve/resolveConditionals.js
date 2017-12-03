@@ -16,7 +16,7 @@ module.exports = function (orders) {
             resolveConditionalLoop(orders, order);
             conditionals = extractConditionalOutcomeOrders(orders);
 
-        } else{
+        } else {
             resolveConditionalChain(orders, order);
             conditionals = extractConditionalOutcomeOrders(orders);
         }

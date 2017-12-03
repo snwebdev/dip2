@@ -11,9 +11,9 @@
  *
  */
 
-const  powers = ["Austria", "England", "France", "Germany", "Italy", "Russia", "Turkey"];
+const powers = ["Austria", "England", "France", "Germany", "Italy", "Russia", "Turkey"];
 
-module.exports = function (text){
+module.exports = function (text) {
     for (var i = 0; i < powers.length; i++) {
         if (powers[i] === text) {
             return true;
