@@ -35,11 +35,25 @@ const rejectMalformedOrders = require('./logic/orders/rejectMalformedOrders');
 
 const getRowsFromOrderTextFile = require('./logic/parse/getRowsFromOrderTextFile');
 const firstRowIsAPower = require('./logic/parse/firstRowIsAPower');
+const lineIsAnOrder = require('./logic/parse/lineIsAnOrder');
+const parseOrdersText = require('./logic/parse/parseOrdersText');
+const orderTextFileOK =require('./logic/parse/orderTextFileOK');
+var response = "";
+if(orderTextFileOK(powers)){
+ response = "text file ok"
+} else{
 
-
+}
 
 var rows = getRowsFromOrderTextFile();
-console.log("first row is a power: " +firstRowIsAPower(powers, rows) );
+
+
+
+
+var text = "F ADS c Lon - Bres";
+console.log (text + " isAnOrder="+ lineIsAnOrder(text));
+
+parseOrdersText();
 
 
 
