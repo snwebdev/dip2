@@ -15,7 +15,7 @@ const failConvoyInProvince = require('../failConvoyInProvince');
 
 module.exports = function (orders, province) {
 
-    console.log("resolving hold.................");
+    //console.log("resolving hold.................");
     var holdOrder = getOrderForUnitInProvince(province, orders);
 
     if (singleBiggestSupportedMoveInExists(orders, province) &&

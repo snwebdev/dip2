@@ -37,54 +37,58 @@ const getRowsFromOrderTextFile = require('./logic/parse/getRowsFromOrderTextFile
 const firstRowIsAPower = require('./logic/parse/firstRowIsAPower');
 const lineIsAnOrder = require('./logic/parse/lineIsAnOrder');
 const parseOrdersText = require('./logic/parse/parseOrdersText');
-const orderTextFileOK =require('./logic/parse/orderTextFileOK');
-var response = "";
-if(orderTextFileOK(powers)){
- response = "text file ok"
-} else{
+const rejectedOrderExists = require('./logic/orders/rejectedOrderExists');
+const getRejectedOrder = require('./logic/orders/getRejectedOrder');
+const buildRejectedOrderText = require('./response/buildRejectedOrderText');
+const buildAdjudicationResponseText = require('./response/buildAdjudicationResponseText');
 
-}
+
+var response = {};
+
 
 var rows = getRowsFromOrderTextFile();
 
 
 
-
-var text = "F ADS c Lon - Bres";
-console.log (text + " isAnOrder="+ lineIsAnOrder(text));
-
-parseOrdersText();
+//parseOrdersText();
 
 
 
 //
-// var orders = getOrdersArrayFromOrdersTextFile(units);
-// var rejectedOrders = [];
-// rejectMalformedOrders(units, orders, rejectedOrders);
-// initialiseMapFromOrders(units, orders);
-// checkUnitsCanBeInProvinces(orders);
-// removeRejectedOrders(units, orders, rejectedOrders);
-// checkOrdersLegal(units, orders);
-// addSupportedMoveUnitTypeToOrders(units, orders);
-//orders = processOrders(units, orders);
-
-// console.log("units");
-// console.log(units);
-// console.log("orders");
-// console.log(orders);
+ var orders = getOrdersArrayFromOrdersTextFile(units);
 
 
-//processOrders(units, orders);
-// console.log("after orderProcessing... ");
-// console.log(orders);
+ if (!rejectedOrderExists(orders)){
+     response.rejectedOrderExists = false;
+     initialiseMapFromOrders(units, orders);
+     checkUnitsCanBeInProvinces(orders);
+     //removeRejectedOrders(units, orders, rejectedOrders);
+     checkOrdersLegal(units, orders);
+     addSupportedMoveUnitTypeToOrders(units, orders);
+     //orders = processOrders(units, orders);
 
-// resolve(units, orders)
-//
-// console.log("after resolving orders... ");
-// console.log(orders);
-// printUnitOutcome(units);
 
-console.log('end');
+
+     processOrders(units, orders);
+     // console.log("after orderProcessing... ");
+     // console.log(orders);
+
+     resolve(units, orders)
+
+     // console.log("after resolving orders... ");
+      console.log(orders);
+     // printUnitOutcome(units);
+     response.text = buildAdjudicationResponseText(orders, units);
+ } else{
+     response.rejectedOrderExists = true;
+     response.rejectedOrder = getRejectedOrder(orders);
+     response.text = buildRejectedOrderText(response.rejectedOrder);
+ }
+
+
+console.log("response...\n\n"+(response.text));
+
+//console.log('end');
 
 
 

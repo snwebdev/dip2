@@ -16,8 +16,19 @@ const getSupportedHoldProvinceNameFromOrderTextArray = require('./getSupportedHo
 module.exports = function (orderTextArray) {
     order = {};
     order.power = getPowerFromOrderTextArray(orderTextArray);
-    order.unitLocation = getMoveFromProvinceNameFromOrderTextArray(orderTextArray);
     order.unitType = getUnitTypeFromOrderTextArray(orderTextArray);
+    if (order.unitType === -1){
+        order.rejected = true;
+        order.rejectedReasonText = "\""+ orderTextArray[1] + "\" is not a unit type.";
+        return order;
+    }
+    order.unitLocation = getMoveFromProvinceNameFromOrderTextArray(orderTextArray);
+    if (order.unitLocation === -1){
+        order.rejected = true;
+        order.rejectedReasonText = "\""+ orderTextArray[2] + "\" is not a province.";
+        return order;
+    }
+
     order.type = "SupportHold";
     order.supportedHoldProvinceName = getSupportedHoldProvinceNameFromOrderTextArray(orderTextArray);
     return order

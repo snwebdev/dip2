@@ -16,8 +16,8 @@ const addConvoyChainsToMoves = require('./addConvoyChainsToMoves');
 
 
 module.exports = function (units, orders) {
-    console.log("");
-    console.log("Resolving orders");
+    // console.log("");
+    // console.log("Resolving orders");
 
     cutSupports(orders);
     succeedUncutSupportOrders(orders);
